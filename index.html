@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="th">
+<!--เมื่อก่อนจะต้องเขียน xmln หรือ xml:lang ในแท็ก <html> เพื่อกำหนดภาษาของหน้า แต่สำหรับ HTML5 จะเหลือแค่นี้ -->
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> -->
+
+<head>
+    <meta charset="UTF-8">
+    <!--เมื่อก่อนจะต้องเขียนแท็ก meta ยาว ๆ เพื่อกำหนด Character Set เป็น UTF-8 แต่ตอนนี้เราสามารถกำหนดโดยเขียนแค่นี้-->
+    <title>HTML5 & CSS3</title>
+    <script async src="function.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+
+    <header class="iheader">
+        <h1>
+            <center>HTML5 & CSS3</center>
+        </h1>
+        <h5>
+            <center>หน่วยการเรียนรู้</center>
+        </h5>
+    </header>
+
+    <nav class="topnav">
+        <div class="navbar">
+            <a id="Home" class="active" onclick="slecteMunu('Home')">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">HTML5
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a id="TagInput" onclick="slecteMunu('TagInput')">Tag Input</a>
+                    <a id="AttributesForInput" onclick="slecteMunu('AttributesForInput')">Attributes For
+                        Input</a>
+                    <a id="VideoAudio" onclick="slecteMunu('VideoAudio')">Video & Audio</a>
+                    <a id="CanvasSvg" onclick="slecteMunu('CanvasSvg')">Canvas & Svg </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">CSS3
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a id="CSS3Borders" onclick="slecteMunu('CSS3Borders')">CSS3 Borders</a>
+                    <a id="CSS3Backgrounds" onclick="slecteMunu('CSS3Backgrounds')">CSS3 Backgrounds</a>
+                    <a id="CSS3TextEffects" onclick="slecteMunu('CSS3TextEffects')">CSS3 Text Effects</a>
+                    <a id="CSS3Fonts" onclick="slecteMunu('CSS3Fonts')">CSS3 Fonts</a>
+                    <a id="CSS32DTransforms" onclick="slecteMunu('CSS32DTransforms')">CSS3 2D Transforms</a>
+                    <a id="CSS33DTransforms" onclick="slecteMunu('CSS33DTransforms')">CSS3 3D Transforms</a>
+                    <a id="CSS3Transitions" onclick="slecteMunu('CSS3Transitions')">CSS3 Transitions</a>
+                    <a id="CSS3Animations" onclick="slecteMunu('CSS3Animations')">CSS3 Animations</a>
+                </div>
+            </div>
+            <a id="Example" class="" onclick="slecteMunu('Example')">Example</a>
+
+        </div>
+    </nav>
+
+    <aside>
+        <article class="forecast">
+            <h1>พยากรณ์อากาศ</h1>
+            <article class="day day-forecast-1">
+                <h2>03 มีนาคม 2020</h2>
+                <p>ฝนตก</p>
+            </article>
+            <article class="day day-forecast-2">
+                <h2>04 มีนาคม 2020</h2>
+                <p>ฝนตกหนัก</p>
+            </article>
+            <article class="day day-forecast-3">
+                <h2>05 มีนาคม 2020</h2>
+                <p>ร้อน</p>
+            </article>
+        </article>
+        <article>
+            <article class="forecast">
+                <h1>ปฏิทิน</h1>
+            </article>
+            <article class="calendar">
+                <center>
+                    <iframe src="Calendar.html" seamless></iframe>
+                </center>
+            </article>
+        </article>
+
+    </aside>
+
+    <main>
+        <!--HTML5-->
+        <section name="Home">
+            <figure>
+                <center>
+                    <img src="/image/html-css-01.jpg" alt="About image" />
+                </center>
+            </figure>
+            <figure>
+                <center>
+                    <img src="/image/layout.png" alt="About image" />
+                    <figcaption>
+                        <p>โครงสร้าง Web Sample WorkShop</p>
+                    </figcaption>
+                </center>
+            </figure>
+            <hr>
+            <article>
+                <h1 class="ex-font-1">ทำไมเราถึงต้องใช้ Tag ของ HTML5 ?</h1>
+                <p class="ex-font-1" style="word-wrap:break-word;"><b>คำตอบ : </b>การใช้แท็กของ HTML5 จะทำให้Code
+                    อ่านง่ายยิ่งขึ้นและช่วยในด้าน SEO
+                    มากกว่าด้วย</p>
+                <br>
+                <h1 class="ex-font-1">แล้วเมื่อไหร่ที่เราควรจะใช้ Tag div ?</h1>
+                <p class="ex-font-1" style="word-wrap:break-word;"><b>คำตอบ : </b> ควรจะยังใช้ div
+                    เมื่อเราอยากมีภาชนะทั่วๆ
+                    ไปที่ไม่ได้เข้าพวกแท็ก HTML5 หรือมีไว้เพื่อตกแต่งเฉยๆ</p>
+            </article>
+            <hr>
+            <article style="margin-left: 3rem;">
+                <h1 class="ex-font-1">Link ข้อมูลเพิ่มเติม</h1>
+                <a class="ex-font-1" href="https://1stwebdesigner.com/calendar-ui-layout-css/">Ex. Calendar</a>
+                <br>
+                <a class="ex-font-1" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article">Ex.
+                    Element</a>
+                <br>
+                <a class="ex-font-1" href="https://www.w3schools.com/cssref/pr_class_display.asp">Document CSS</a>
+                <br>
+                <a class="ex-font-1" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">Ex. การใช้งาน
+                    Tag ต่างๆของ HTML5</a>
+            </article>
+
+        </section>
+
+        <section name="TagInput" hidden>
+            <h1>
+                <center><label>Tag Input</label></center>
+            </h1>
+            <article>
+                <form action="" method="get" class="form-example">
+                    <article>
+                        <header>
+                            <article>
+                                <span class="form-article-input">
+                                    <span>
+                                        <label class="iLabel" for="name">Enter name: </label>
+                                        <input class="iText" type="text" name="name" id="name" required>
+                                    </span>
+                                </span>
+                                <span class="form-article-input">
+                                    <span>
+                                        <label class="iLabel" for="email">Enter email: </label>
+                                        <input class="iText" type="email" name="email" id="email" required>
+                                    </span>
+                                </span>
+                            </article>
+                            <article>
+                                <span class="form-article-input">
+                                    <span>
+                                        <label class="iLabel" for="color">Color: </label>
+                                        <input class="iText" type="color" name="favcolor">
+                                    </span>
+                                </span>
+                                <span class="form-article-input">
+                                    <span>
+                                        <label class="iLabel" for="date">Date: </label>
+                                        <input class="iText" type="date" name="bday">
+                                    </span>
+                                </span>
+                            </article>
+                            <article>
+                                <span class="form-article-input">
+                                    <span>
+                                        <label class="iLabel" for="number">Number : </label>
+                                        <input class="iText" type="number" name="quantity" min="1" max="5">
+                                    </span>
+                                </span>
+                                <span class="form-article-input">
+                                    <span>
+                                        <label class="iLabel" for="month">Month: </label>
+                                        <input class="iText" type="month" name="bdaymonth">
+                                    </span>
+                                </span>
+                            </article>
+                            <article>
+                                <span class="form-article-input">
+                                    <span>
+                                        <label class="iLabel" for="search">Search: </label>
+                                        <input class="iText" type="search" name="googlesearch">
+                                    </span>
+                                </span>
+                                <span class="form-article-input">
+                                    <span>
+                                        <label class="iLabel" for="range">Range: </label>
+                                        <input class="iText" type="range" name="points" min="1" max="10">
+                                    </span>
+                                </span>
+                            </article>
+                            <article>
+                                <span class="form-article-input">
+                                    <span>
+                                        <label class="iLabel" for="tel">Tel: </label>
+                                        <input class="iText" type="tel" name="usrtel">
+                                    </span>
+                                </span>
+                                <span class="form-article-input">
+                                    <span>
+                                        <label class="iLabel" for="time">Time: </label>
+                                        <input class="iText" type="time" name="usr_time">
+                                    </span>
+                                </span>
+                            </article>
+                            <article>
+                                <span class="form-article-input">
+                                    <span>
+                                        <label class="iLabel" for="url">Url: </label>
+                                        <input class="iText" type="url" name="homepage">
+                                    </span>
+                                </span>
+                                <span class="form-article-input">
+                                    <span>
+                                        <label class="iLabel" for="week">Week: </label>
+                                        <input class="iText" type="week" name="year_week">
+                                    </span>
+                                </span>
+                            </article>
+                        </header>
+                        <footer>
+                            <article>
+                                <center>
+                                    <input class="iSubmit" type="submit" onclick="Submit()" value="Submit">
+                                </center>
+                            </article>
+                        </footer>
+                    </article>
+                </form>
+            </article>
+        </section>
+
+        <section name="AttributesForInput" hidden>
+            <h1>
+                <center><label>Attributes For Input</label></center>
+            </h1>
+            <article>
+                <article>
+                    <fieldset>
+                        <legend>Contenteditable Attribute</legend>
+                        <article>
+                            <p contenteditable="true">Contenteditable : ช่วยให้เราทำการแก้ไขหรือวรรคข้อความได้</p>
+                        </article>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset>
+                        <legend>Data Attribute</legend>
+                        <article>
+                            <p>data-itemName='Test_1'</p>
+                            <p id='items' data-itemName='Test_1'>
+                                ทำให้เราเพิ่มแอตทริบิวต์ที่กำหนดเองได้
+                                โดยใช้แอตทริบิวต์ 'data-' ตามด้วยชื่อที่ต้องการ </p>
+                            <input class="iSubmit" style="margin-top: 2px;" onclick="GetData();" type="submit"
+                                value="Submit">
+                        </article>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset>
+                        <legend>Datetime Attribute</legend>
+                        <article>
+                            <time datetime="2020-05-14T00:01">14-May </time>
+                            <span>มีไว้สำหรับการนำเสนอวันที่และเวลาในรูปแบบที่เครื่องอ่านได้
+                                ตัวอย่างนี้สามารถช่วยให้ผู้ใช้เพิ่มเหตุการณ์ในปฏิทินของผู้ใช้เองได้</span>
+                            <span>
+                                หมายเหตุ:องค์ประกอบเวลาไม่ได้แสดงผลเป็นสิ่งพิเศษในเบราว์เซอร์หลัก ๆ
+                            </span>
+                        </article>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset>
+                        <legend>Download Attribute</legend>
+                        <article>
+                            <a href="/file/HTML5 & CSS3.pptx" download>Download เอกสาร</a>
+                        </article>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset>
+                        <legend>Draggable Attribute</legend>
+                        <article>
+                            <p draggable="true">ข้อความที่สามารถใช้เม้าส์ลากได้</p>
+                            <p draggable="false">ข้อความที่สามารถใช้เม้าส์ลากไม่ได้</p>
+                        </article>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset>
+                        <legend>พิมพ์ Attribute ชื่อ "hidden" เพื่อทำการซ่อน Button</legend>
+                        <article>
+                            <p id="Ex_hidden" style="box-shadow: inset 1px 0 1px 1px #29627e; width: 80%;"
+                                contenteditable="true">
+                                hidden
+                            </p>
+
+                            </span>
+                            <input onclick="Addclass_hidden();" type="submit" value="เพิ่ม/ลบ Attribute">
+                            <span>
+                                <label> ผลลัพธ์ : </label>
+                                <button id="btn_hidden" hidden>Button</button>
+                            </span>
+                        </article>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset>
+                        <legend>List ใช้ทำรายการ ตัวเลือกสำหรับข้อมูล</legend>
+                        <article>
+                            <input type="text" list="list1">
+
+                            <datalist id="list1">
+                                <option> New Delhi</option>
+                                <option> Chennai</option>
+                                <option> Kolkata</option>
+                                <option> Mumbai</option>
+                            </datalist>
+
+                        </article>
+
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset>
+                        <legend>max ใช้ในการจำกัดการเพิ่มตัวเลขที่สามารถเพิ่มได้สูงสุด ตามค่าที่ได้กำหนดไว้</legend>
+                        <article>
+                            <input type="number" max="60">
+                            <input type="range" max="100">
+                        </article>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset>
+                        <legend>min ใช้เพื่อตั้งค่าต่ำสุดของหมายเลขช่วงของอินพุตค่าต่ำสุดดีฟอลต์คือ 0</legend>
+                        <article>
+                            <input type="number" min="18">
+                            <input type="range" min="18" max="40">
+                        </article>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset>
+                        <legend>minlength ใช้เพื่อตั้งค่าความยาวต่ำสุดของค่าที่อยู่ในกล่องข้อความ ค่าเริ่มต้นของ
+                            minlength เป็น 0</legend>
+                        <article>
+                            <input type="text" minlength="3" id="minlength" onchange="minlength()">
+                        </article>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset>
+                        <legend>open ใช้เพื่อเปิดองค์ประกอบรายละเอียดในการโหลดหน้า</legend>
+                        <article>
+                            <details open>
+                                <summary>See More</summary>
+                                <p>Description of details element.</p> 
+                            </details>
+                        </article>
+                    </fieldset>
+                </article>
+
+            </article>
+        </section>
+
+        <section name="VideoAudio" hidden>
+            <h1>
+                <center><label>Video & Audio</label></center>
+            </h1>
+            <article>
+                <article>
+                    <fieldset>
+                        <legend>Video</legend>
+                        <article>
+                            <center>
+                                <p>mp4</p>
+                                <video controls src="http://techslides.com/demos/sample-videos/small.mp4"
+                                    type="video/mp4">
+                            </center>
+                        </article>
+                        <!--
+                        <article>
+                            <center>
+                                <p>ogg</p>
+                                <video controls src=http://techslides.com/demos/sample-videos/small.ogv
+                                    type="video/ogg">
+                            </center>
+                        </article>
+                        -->
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset>
+                        <legend>Audio</legend>
+                        <article>
+                            <center>
+                                <audio controls
+                                    src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3">
+                                    Your browser does not support the
+                                    <code>audio</code> element.
+                                </audio>
+                        </article>
+                    </fieldset>
+                </article>
+            </article>
+        </section>
+
+        <section name="CanvasSvg" hidden>
+            <h1>
+                <center><label>Canvas & Svg</label></center>
+            </h1>
+            <fieldset>
+                <legend>Canvas</legend>
+                <article>
+                    <fieldset>
+                        <legend>ตัวอย่าง ที่ 1</legend>
+                        <article>
+                            <center>
+                                <canvas id="mycanvas"></canvas>
+                            </center>
+                        </article>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset>
+                        <legend>ตัวอย่าง ที่ 2</legend>
+                        <article>
+                            <center>
+                                <canvas id="mycanvas2"></canvas>
+                            </center>
+                        </article>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset>
+                        <legend>ตัวอย่าง ที่ 3</legend>
+                        <article>
+                            <center>
+                                <article>
+                                    <canvas id="mycanvas3"></canvas>
+                                </article>
+
+                            </center>
+                        </article>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset>
+                        <legend>ตัวอย่าง ที่ 4</legend>
+                        <article>
+                            <center>
+                                <article>
+                                    <canvas id="mycanvas4"></canvas>
+                                </article>
+
+                            </center>
+                        </article>
+                    </fieldset>
+                </article>
+            </fieldset>
+            <fieldset>
+                <legend>Svg</legend>
+                <article>
+                    <fieldset>
+                        <legend>ตัวอย่าง ที่ 1</legend>
+                        <article>
+                            <center>
+                                <svg width="200" height="200" style="border:1px solid #ccc">
+                                    <line x1="0" y1="0" x2="200" y2="200"> </line>
+                                </svg>
+
+                                <svg width="200" height="200" style="border:1px solid #ccc">
+                                    <line x1="200" y1="0" x2="0" y2="200" stroke="black"> </line>
+                                </svg>
+
+                                <svg width="200" height="200" style="border:1px solid #ccc">
+                                    <line x1="100" y1="0" x2="100" y2="200" stroke="red" stroke-width="5"> </line>
+                                    <line x1="0" y1="100" x2="200" y2="100" stroke="blue" stroke-width="3"></line>
+                                </svg>
+
+                            </center>
+                        </article>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset>
+                        <legend>ตัวอย่าง ที่ 2</legend>
+                        <article>
+                            <center>
+                                <svg width="200" height="200" style="border:1px solid #ccc; margin-right:5px">
+                                    <rect x="10" y="10" width="100" height="100" fill="aqua"></rect>
+                                </svg>
+
+                                <svg width="200" height="200" style="border:1px solid #ccc">
+                                    <rect x="10" y="10" width="150" height="100" fill="#ccc" stroke="red"></rect>
+                                </svg>
+
+                                <svg width="200" height="200" style="border:1px solid #ccc">
+                                    <rect x="10" y="10" width="150" height="100" fill="#444" stroke="#0ff"
+                                        stroke-width="10px"></rect>
+                                </svg>
+
+                            </center>
+                        </article>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset>
+                        <legend>ตัวอย่าง ที่ 3</legend>
+                        <article>
+                            <center>
+                                <svg width="200" height="200" style="border:1px solid #ccc; margin-right:5px">
+                                    <circle cx="100" cy="100" r="50" fill="aqua" />
+                                </svg>
+
+                                <svg width="200" height="200" style="border:1px solid #ccc">
+                                    <circle cx="100" cy="100" r="50" fill="silver" stroke="red" stroke-width='3' />
+                                </svg>
+
+                                <svg width="200" height="200" style="border:1px solid #ccc">
+                                    <circle id="cir" cx="100" cy="100" r="50" fill="silver" stroke="blue"
+                                        stroke-width='3' />
+                                </svg>
+                            </center>
+                        </article>
+                    </fieldset>
+                </article>
+            </fieldset>
+        </section>
+
+        <!--CSS3-->
+        <section name="CSS3Borders" hidden>
+            <h1>
+                <center><label>CSS3 Borders</label></center>
+            </h1>
+            <article>
+                <fieldset>
+                    <legend>ตัวอย่าง ที่ 1</legend>
+                    <article>
+                        <center>
+                            <div class="borders1">กล่องข้อความของฉัน</div>
+                        </center>
+                    </article>
+                </fieldset>
+            </article>
+            <article>
+                <fieldset>
+                    <legend>ตัวอย่าง ที่ 2</legend>
+                    <article>
+                        <center>
+                            <div class="borders2" id="round">กล่องข้อความที่1</div>
+                            <div class="borders2" id="stretch">กล่องข้อความที่2</div>
+                        </center>
+                    </article>
+                </fieldset>
+            </article>
+            <!--
+            <article>
+                <fieldset>
+                    <legend>ตัวอย่าง ที่ 3</legend>
+                    <article>
+                        <center>
+                            <button id="myBtn" onclick="openModal()">Open Modal</button>
+
+                            <div id="myModal" class="modal">
+
+                               
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p>Some text in the Modal..</p>
+                                </div>
+
+                            </div>
+                        </center>
+                    </article>
+                </fieldset>
+            </article>
+        -->
+        </section>
+
+        <section name="CSS3Backgrounds" hidden>
+            <h1>
+                <center><label>CSS3 Backgrounds</label></center>
+            </h1>
+            <article>
+                <div class="backgroundimg">
+                    <label>
+                        .backgroundimg{
+                        background-image: url('../img/background.jpg');
+                        background-repeat: no-repeat; //วางรูปภาพแบบ ไม่ซ้ำ
+                        background-position: center; //วางรูปภาพให้อยู่ตรงกลาง
+                        height: 888;
+                        }
+
+                    </label>
+
+                </div>
+
+            </article>
+        </section>
+
+        <section name="CSS3TextEffects" hidden>
+            <h1>
+                <center><label>CSS3 Text Effects</label></center>
+            </h1>
+            <article>
+                <fieldset>
+                    <legend>ตัวอย่าง ที่ 1 ลักษณะของเงา</legend>
+                    <article>
+                        <h2 class="tf_h2">ข้อความของฉัน</h2>
+                        <h3 class="tf_h3">HTML5 (เอชทีเอ็มอลห้า) ภาษามาร์กอัป ที่ใช้สำหรับเขียน website ที่พัฒนามาจาก
+                            HTML
+                            ในบทเรียนนี้ก็จะสอนในเรื่อง Tag (แท๊ก) ต่างๆ ของ HTML5 ที่เพิ่มมาจาก HTML4 หรือ xHTML
+                            (เอ็กซ์เอชทีเอ็มแอล) ทำความรู้จักตั้งแต่เบื้องต้นก่อนการเริ่มเขียน สามารถเขียนตามได้
+                            มีโค้ดตัวอย่างให้สามารถเขียนตามได้ HTML5 new Elements อิลิเม็นท์ส่วนประกอบใหม่ๆ ใน HTML5
+                            สามารถใช้งานได้ดียิ่งขึ้น HTML5 Canvas
+                            แท็กที่ใช้สร้างงานกราฟฟิกเปลี่ยนลูกเล่นการแสดงผลจากเดิม</h3>
+                    </article>
+                    <article>
+                        <h2>1.1 การทำตัวอักษรนูน</h2>
+                        <h3 class="tf_1-1">HTML5 (เอชทีเอ็มอลห้า) ภาษามาร์กอัป ที่ใช้สำหรับเขียน website ที่พัฒนามาจาก
+                            HTML
+                            ในบทเรียนนี้ก็จะสอนในเรื่อง Tag (แท๊ก) ต่างๆ ของ HTML5 ที่เพิ่มมาจาก HTML4 หรือ xHTML
+                            (เอ็กซ์เอชทีเอ็มแอล) ทำความรู้จักตั้งแต่เบื้องต้นก่อนการเริ่มเขียน สามารถเขียนตามได้
+                            มีโค้ดตัวอย่างให้สามารถเขียนตามได้ HTML5 new Elements อิลิเม็นท์ส่วนประกอบใหม่ๆ ใน HTML5
+                            สามารถใช้งานได้ดียิ่งขึ้น HTML5 Canvas
+                            แท็กที่ใช้สร้างงานกราฟฟิกเปลี่ยนลูกเล่นการแสดงผลจากเดิม</h3>
+                    </article>
+                    <article>
+                        <h2>1.2 การทำข้อความแบบยุบ</h2>
+                        <h3 class="tf_1-2">HTML5 (เอชทีเอ็มอลห้า) ภาษามาร์กอัป ที่ใช้สำหรับเขียน website ที่พัฒนามาจาก
+                            HTML
+                            ในบทเรียนนี้ก็จะสอนในเรื่อง Tag (แท๊ก) ต่างๆ ของ HTML5 ที่เพิ่มมาจาก HTML4 หรือ xHTML
+                            (เอ็กซ์เอชทีเอ็มแอล) ทำความรู้จักตั้งแต่เบื้องต้นก่อนการเริ่มเขียน สามารถเขียนตามได้
+                            มีโค้ดตัวอย่างให้สามารถเขียนตามได้ HTML5 new Elements อิลิเม็นท์ส่วนประกอบใหม่ๆ ใน HTML5
+                            สามารถใช้งานได้ดียิ่งขึ้น HTML5 Canvas
+                            แท็กที่ใช้สร้างงานกราฟฟิกเปลี่ยนลูกเล่นการแสดงผลจากเดิม</h3>
+                    </article>
+                </fieldset>
+            </article>
+            <article>
+                <fieldset>
+                    <legend>ตัวอย่าง ที่ 2 การจัดวางข้อความไม่ให้ล้นออกนอกรอบ</legend>
+                    <article>
+                        <h2>ข้อความของฉัน</h2>
+                        <p class="" style="width: 400px;border:2px solid brown;"> ข้อความนี้ยาวเกินไป
+                            ยาววววววมว๊ากๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆ
+                        </p>
+                        <p class="p_tf"> ข้อความนี้ยาวเกินไป
+                            ยาววววววมว๊ากๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆๆ
+                        </p>
+                    </article>
+                </fieldset>
+            </article>
+        </section>
+
+        <section name="CSS3Fonts" hidden>
+            <h1>
+                <center><label>CSS3 Fonts</label></center>
+            </h1>
+            <article>
+                <p class="ex-font-1">คุณสมบัติใหม่ ของ CSS3 @font-face ทำให้เราสามารถนำตัวฟอนต์สวยๆมาใส่ในเว็บไซต์ได้
+                    และจะยังมคุณสมบัติเหมือนตัวหนังสือทั่วไปทุกประการ
+                </p>
+                <p class="ex-font-2">
+
+                    เนื่องจาก @font-face นี้เป็นหนึ่งในไม่กี่อย่างของ CSS3 ที่สามารถใช้งานใน IE ได้แม้กระทั่งใน IE6
+                    <b>เลยทีเดียว </b>โดยขั้นแรกก็เอาฟอนต์ที่เราชื่นชอบมาแปลงเป็นชุดของฟอนต์สำหรับใช้ในเว็บเสียก่อน
+                </p>
+            </article>
+        </section>
+
+        <section name="CSS32DTransforms" hidden>
+            <h1>
+                <center><label> CSS3 2D Transforms</label></center>
+            </h1>
+            <article>
+                <p class="ex-font-1">
+                     ใน CSS3 เราสามารถเปลี่ยนรูปร่างของวัตถุต่างๆ ไม่ว่าจะ เปลี่ยนตำแหน่ง ,ปรับขนาด  ,ปรับความเอียง
+                    ,หมุน , และยืด รูปภาพ   CSS3 สามารถใช้ได้กับทุกบราวเซอร์ แต่มีเงื่อนไขดังนี้   -ใน Internet
+                    Explorer 9 ต้องใส่ -ms-. นำหน้าโค๊ดคำสั่ง เช่น -ms-transform:rotate(30deg);   -ใน Firefox
+                    ต้องใส่ -moz-. นำหน้าโค๊ดคำสั่ง เช่น  -moz-transform:rotate(30deg);
+                       -ใน Chrome and Safari ต้องใส่ -webkit-. นำหน้าโค๊ดคำสั่ง เช่น 
+                    -webkit-transform:rotate(30deg);   -ใน Opera ต้องใส่  -o-. นำหน้าโค๊ดคำสั่ง เช่น 
+                    -o-transform:rotate(30deg);
+                </p>
+                <article>
+                    <fieldset style="height: 200px;">
+                        <legend>ตัวอย่าง ที่ 1 การทำให้วัตถุเอียง</legend>
+                        <article>
+                            <center>
+                                <div class="div-2d1">ข้อความของฉัน</div>
+                            </center>
+                        </article>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset style="height: 400px;">
+                        <legend>ตัวอย่าง ที่ 2 การปรับขนาดวัตถุ</legend>
+                        <article>
+                            <div class="div-2d">ข้อความของฉัน</div>
+                            <div class="div-2d div-2d2-1">ข้อความของฉัน</div>
+                        </article>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset style="height: 310px;">
+                        <legend>ตัวอย่าง ที่ 3 การย้ายตำแหน่งของวัตถุ</legend>
+                        <div style="border:1px solid black;width:305px; height:205px; ">
+                            <div class="div-2d">ข้อความของฉัน</div>
+                            <div class="div-2d div-2d3-1">ข้อความของฉัน</div>
+                        </div>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset style="height: 250px;">
+                        <legend>ตัวอย่าง ที่ 4 การพลิกวัตถุ</legend>
+                        <article>
+                            <center>
+                                <div class="div-2d">ข้อความของฉัน</div>
+                                <div class="div-2d div-2d4-1">ข้อความของฉัน</div>
+                            </center>
+                        </article>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset>
+                        <legend>ตัวอย่าง ที่ 5 การปรับเปลี่ยนรูปแบบ Matrix transform</legend>
+                        <article>
+                            <center>
+                                <div class="div-matrix">ข้อความของฉัน</div>
+                                <div class="div-matrix div-matrix-2">ข้อความของฉัน</div>
+                            </center>
+                        </article>
+                    </fieldset>
+                </article>
+            </article>
+        </section>
+
+        <section name="CSS33DTransforms" hidden>
+            <h1>
+                <center><label>CSS3 3D Transforms</label></center>
+            </h1>
+            <article> 
+                <article>
+                    <fieldset>
+                        <legend>ตัวอย่าง ที่ 1 การหมุนตามแนวแกน x </legend>
+                        <article>
+                            <center>
+                                <div class="div-3d">ข้อความของฉัน</div>
+                                <div class="div-3d div-3d1">ข้อความของฉัน</div>
+                            </center>
+                        </article>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset>
+                        <legend>ตัวอย่าง ที่ 2 การหมุนตามแกน y </legend>
+                        <article>
+                            <center>
+                                <div class="div-3d">ข้อความของฉัน</div>
+                                <div class="div-3d div-3d2">ข้อความของฉัน</div>
+                            </center>
+                        </article>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset>
+                        <legend>ตัวอย่าง ที่ 3 การสร้างภาพ perspective ตามแนวแกน x  </legend>
+                        <article>
+                            <center>
+                                <div class="div-3d">ข้อความของฉัน</div>
+                                <div class="div-3d div-3d3">ข้อความของฉัน</div>
+                            </center>
+                        </article>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset style="height: 250px;">
+                        <legend>ตัวอย่าง ที่ 4 การสร้างภาพ perspective ตามแนวแกน Y    </legend>
+                        <article>
+                            <center>
+                                <div class="div-3d">ข้อความของฉัน</div>
+                                <div class="div-3d div-3d4">ข้อความของฉัน</div>
+                            </center>
+                        </article>
+                    </fieldset>
+                </article>
+            </article>
+        </section>
+
+        <section name="CSS3Transitions" hidden>
+            <h1>
+                <center><label>CSS3 Transitions</label></center>
+            </h1>
+            <article>
+                <article>
+                    <fieldset>
+                        <legend>ตัวอย่าง ที่ 1 การเปลี่ยนรูปร่างวัตถุ แบบทิศทางเดียว </legend>
+                        <article>
+                            <div class="div-transition-1"></div>
+                        </article>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset style="height: 200px;">
+                        <legend>ตัวอย่าง ที่ 2 การเปลี่ยนรูปร่างวัตถุ แบบสองทิศทาง </legend>
+                        <article>
+                            <center>
+                                <div class="div-transition-2">
+                                    <center>ข้อความของฉัน</center>
+                                </div>
+                            </center>
+                        </article>
+                    </fieldset>
+                </article>
+            </article>
+        </section>
+
+        <section name="CSS3Animations" hidden>
+            <h1>
+                <center><label>CSS3 Animations</label></center>
+            </h1>
+            <article>
+                <article>
+                    <fieldset>
+                        <legend>ตัวอย่าง ที่ 1 Animations แบบเคลื่อนที่ในทิศทางต่างๆ </legend>
+                        <article>
+                            <div class="div-animations-1">
+                                <center>ข้อความของฉัน</center>
+                            </div>
+                        </article>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset>
+                        <legend>ตัวอย่าง ที่ 2 Animations แบบเปลี่ยนสี </legend>
+                        <article>
+                            <div class="div-animations-2">
+                                <center>ข้อความของฉัน</center>
+                            </div>
+                        </article>
+                    </fieldset>
+                </article>
+                <article>
+                    <fieldset style="height: 320px;">
+                        <legend>ตัวอย่าง ที่ 3  </legend>
+                        <article>
+                            <div class="div-animations-3">
+                                <center>ข้อความของฉัน</center>
+                            </div>
+                        </article>
+                    </fieldset>
+                </article>
+            </article>
+        </section>
+
+        <section name="Example" hidden>
+            <h1>
+                <center><label>Example</label></center>
+            </h1>
+            <article>
+                <form>
+                    <center>
+                        <article>
+                            <input class="iSubmit" type="submit" formaction="Example/Ex_BoxModel.html"
+                                value="Ex_BoxModel">
+
+                            <input class="iSubmit" type="submit" formaction="Example/EX_Property_Static.html"
+                                value="EX_Property_Static">
+
+                            <input class="iSubmit" type="submit" formaction="Example/EX_Property_Relative.html"
+                                value="EX_Property_Relative">
+                        </article>
+                        <article>
+                            <input class="iSubmit" type="submit" formaction="Example/EX_Property_Absolute.html"
+                                value="EX_Property_Absolute">
+
+                            <input class="iSubmit" type="submit" formaction="Example/EX_Property_Fixed.html"
+                                value="EX_Property_Fixed">
+
+                            <input class="iSubmit" type="submit" formaction="Example/EX_Pseudo-classes.html"
+                                value="EX_Pseudo-classes">
+                        </article>
+                        <article>
+                            <input class="iSubmit" type="submit" formaction="Example/EX_Pseudo-element.html"
+                                value="EX_Pseudo-element">
+                        </article>
+                        <hr>
+                        <article>
+                            <input class="iSubmit" type="submit" formaction="Example/Answer/Ans_css_1.html"
+                                value="Ans_css_1">
+
+                            <input class="iSubmit" type="submit" formaction="Example/Answer/Ans_css_2.html"
+                                value="Ans_css_2">
+
+                            <input class="iSubmit" type="submit" formaction="Example/Answer/Ans_css_3.html"
+                                value="Ans_css_3">
+                        </article>
+                        <article>
+                            <input class="iSubmit" type="submit" formaction="Example/Answer/Ans_html_1.html"
+                                value="Ans_html_1">
+
+                            <input class="iSubmit" type="submit" formaction="Example/Answer/Ans_html_2.html"
+                                value="Ans_html_2">
+
+                            <input class="iSubmit" type="submit" formaction="Example/Answer/Ans_html_3.html"
+                                value="Ans_html_3">
+                        </article>
+                    </center>
+
+                </form>
+            </article>
+        </section>
+
+    </main>
+
+    <footer class="ifooter">
+        <center>
+            All rights reserved © 2020 MyCode
+        </center>
+    </footer>
+</body>
+
+
+</html>

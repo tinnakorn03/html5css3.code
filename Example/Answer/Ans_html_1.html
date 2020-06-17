@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            padding: 2%;
+            width: 100%;
+        }
+
+        .form-article-input {
+            width: 49%;
+        }
+
+        .form-article-input-left {
+            width: 49%;
+            float: left;
+        }
+
+        .form-article-input-right {
+            width: 49%;
+            float: right;
+        }
+
+        input.iText {
+            border-radius: 5px;
+            border: 2px solid dodgerblue;
+            width: 20rem;
+            height: 1.3rem;
+            display: table-cell;
+            margin-bottom: 15px;
+        }
+
+        .iLabel {
+            width: 6.5rem;
+            text-align: left;
+            display: table-cell;
+            margin-bottom: 15px;
+        }
+
+        .iSubmit {
+            margin-top: 2rem;
+            border-radius: 7px;
+            border: 2px solid green;
+            background: green;
+            width: 7rem;
+            height: 2rem;
+        }
+
+        section.fixed {
+            position: fixed;
+            left: 27%;
+            top: 20%;
+            padding: 4rem;
+            border: 1px solid #73AD21;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="fixed">
+        <form action="" method="get" class="form-example">
+            <article>
+                <header>
+                    <center>
+                        <article>
+                            <span class="form-article-input">
+                                <span>
+                                    <label class="iLabel" for="user">User </label>
+                                    <input class="iText" type="text" name="user" id="user" required>
+                                </span>
+                            </span>
+                        </article>
+                        <article>
+                            <span class="form-article-input">
+                                <span>
+                                    <label class="iLabel" for="password">Password </label>
+                                    <input class="iText" type="password" name="password" id="password" required>
+                                </span>
+                            </span>
+                        </article>
+                    </center>
+                </header>
+                <footer>
+                    <article>
+                        <center>
+                            <input class="iSubmit" type="submit" formaction="Ans_html_2.html" value="Login">
+                        </center>
+                    </article>
+                </footer>
+            </article>
+        </form>
+    </section>
+</body>
+
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            width: 500px;
+        }
+
+        div>div {
+            margin: auto;
+            border: 1px solid black;
+            width: 440px;
+            background-color: yellow;
+        }
+
+        div>div {
+            display: inline-block;
+            margin: auto;
+            height: 80px;
+            width: 100px;
+            border: 1px solid black;
+        }
+
+        div>div:nth-child(3),
+        div>div:nth-child(4),
+        div>div:nth-child(9) {
+            width: 210px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>

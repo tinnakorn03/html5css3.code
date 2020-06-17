@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            padding: 2%;
+            width: 100%;
+        }
+
+        .form-article-input {
+            width: 49%;
+        }
+
+        .form-article-input-left {
+            width: 49%;
+            float: left;
+        }
+
+        .form-article-input-right {
+            width: 49%;
+            float: right;
+        }
+
+        input.iText {
+            border-radius: 5px;
+            border: 2px solid dodgerblue;
+            width: 20rem;
+            height: 1.3rem;
+            display: table-cell;
+            margin-bottom: 15px;
+        }
+
+        .iLabel {
+            width: 6.5rem;
+            text-align: left;
+            display: table-cell;
+            margin-bottom: 15px;
+        }
+
+        .iSubmit {
+            margin-top: 2rem;
+            border-radius: 7px;
+            border: 2px solid green;
+            background: green;
+            width: 7rem;
+            height: 2rem;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 60%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <form action="" method="get" class="form-example">
+            <article>
+                <header>
+                    <center>
+                        <article>
+                            <span class="form-article-input">
+                                <span>
+                                    <label class="iLabel" for="name">ชื่อ : </label>
+                                    <input class="iText" type="text" name="name" id="name" required>
+                                </span>
+                            </span>
+                            <span class="form-article-input">
+                                <span>
+                                    <label class="iLabel" for="lastName">นามสกุล : </label>
+                                    <input class="iText" type="lastName" name="lastName" id="lastName" required>
+                                </span>
+                            </span>
+                        </article>
+                        <article>
+                            <span class="form-article-input">
+                                <span>
+                                    <label class="iLabel" for="tel">เบอร์โทร : </label>
+                                    <input class="iText" type="text" name="tel" id="tel" required>
+                                </span>
+                            </span>
+                            <span class="form-article-input">
+                                <span>
+                                    <label class="iLabel" for="email">E-mail : </label>
+                                    <input class="iText" type="email" name="email" id="email" required>
+                                </span>
+                            </span>
+                        </article>
+                    </center>
+                </header>
+                <footer>
+                    <article>
+                        <center>
+                            <input class="iSubmit" type="submit" onclick="Submit()" value="Submit">
+                        </center>
+                    </article>
+                </footer>
+            </article>
+        </form>
+        <article style="margin-top: 2rem;">
+            <center>
+                <h3>รายชื่อ</h3>
+                <article style="margin-top: 0.5rem;">
+                    <table>
+                        <tr>
+                            <th>ลำดับ</th>
+                            <th>ชื่อ - นามสกุล</th>
+                            <th>ที่อยู่</th>
+                            <th>เบอร์โทร</th>
+                            <th>E-mail</th>
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+                            <td> อภิชาต </td>
+                            <td> พาณิชย์ </td>
+                            <td> 0811111111 </td>
+                            <td> mail@gmail.com </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>ปานเทพ</td>
+                            <td>ผ่องเพ็ญ</td>
+                            <td> 0811111112 </td>
+                            <td> mail@gmail.com </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>ปวีณา</td>
+                            <td>แสงดาว</td>
+                            <td> 0811111113 </td>
+                            <td> mail@gmail.com </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>รื่นฤดี</td>
+                            <td>ปรัชญา</td>
+                            <td> 0811111114 </td>
+                            <td> mail@gmail.com </td>
+                        </tr>
+                    </table>
+
+                </article>
+            </center>
+
+        </article>
+        <a href="http://www.thai-language.com/id/589844">ลิ้งค์ชื่อ</a>
+    </section>
+</body>
+
+
+</html>

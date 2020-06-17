@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--เมื่อก่อนจะต้องเขียน xmln หรือ xml:lang ในแท็ก <html> เพื่อกำหนดภาษาของหน้า แต่สำหรับ HTML5 จะเหลือแค่นี้ -->
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> -->
+
+<head>
+    <meta charset="UTF-8">
+    <!--เมื่อก่อนจะต้องเขียนแท็ก meta ยาว ๆ เพื่อกำหนด Character Set เป็น UTF-8 แต่ตอนนี้เราสามารถกำหนดโดยเขียนแค่นี้-->
+    <title>HTML5 & CSS3</title>
+    <script async src="function.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+
+    <header class="iheader">
+        <h1>
+            <center>HTML5 & CSS3</center>
+        </h1>
+    </header>
+    <aside>
+        <article class="forecast">
+            <h1>พยากรณ์อากาศ</h1>
+            <article class="day day-forecast-1">
+                <h2>03 มีนาคม 2020</h2>
+                <p>ฝนตก</p>
+            </article>
+            <article class="day day-forecast-2">
+                <h2>04 มีนาคม 2020</h2>
+                <p>ฝนตกหนัก</p>
+            </article>
+            <article class="day day-forecast-3">
+                <h2>05 มีนาคม 2020</h2>
+                <p>ร้อน</p>
+            </article>
+        </article>
+        <article>
+            <article class="forecast">
+                <h1>ปฏิทิน</h1>
+            </article>
+            <article class="calendar">
+                <center>
+                    <iframe src="Calendar.html" seamless></iframe>
+                </center>
+            </article>
+        </article>
+
+    </aside>
+    <main>
+        <figure>
+            <center>
+                <img src="/image/html-css-01.jpg" alt="About image" />
+                <figcaption>
+                    <p>รายละเอียดของรูปภาพ </p>
+                </figcaption>
+            </center>
+        </figure>
+        <hr>
+        <section>
+            <h1>
+                <center><label>Tag Input</label></center>
+            </h1>
+            <article>
+                <form action="" method="get" class="form-example">
+                    <article>
+                        <header>
+                            <article>
+                                <span class="form-article-input">
+                                    <span>
+                                        <label class="iLabel" for="name">Enter name: </label>
+                                        <input class="iText" type="text" name="name" id="name" required>
+                                    </span>
+                                </span>
+                                <span class="form-article-input">
+                                    <span>
+                                        <label class="iLabel" for="email">Enter email: </label>
+                                        <input class="iText" type="email" name="email" id="email" required>
+                                    </span>
+                                </span>
+                            </article>
+                            <article>
+                                <span class="form-article-input">
+                                    <span>
+                                        <label class="iLabel" for="color">Color: </label>
+                                        <input class="iText" type="color" name="favcolor">
+                                    </span>
+                                </span>
+                                <span class="form-article-input">
+                                    <span>
+                                        <label class="iLabel" for="date">Date: </label>
+                                        <input class="iText" type="date" name="bday">
+                                    </span>
+                                </span>
+                            </article>
+                            <article>
+                                <span class="form-article-input">
+                                    <span>
+                                        <label class="iLabel" for="number">Number : </label>
+                                        <input class="iText" type="number" name="quantity" min="1" max="5">
+                                    </span>
+                                </span>
+                                <span class="form-article-input">
+                                    <span>
+                                        <label class="iLabel" for="month">Month: </label>
+                                        <input class="iText" type="month" name="bdaymonth">
+                                    </span>
+                                </span>
+                            </article>
+                            <article>
+                                <span class="form-article-input">
+                                    <span>
+                                        <label class="iLabel" for="search">Search: </label>
+                                        <input class="iText" type="search" name="googlesearch">
+                                    </span>
+                                </span>
+                                <span class="form-article-input">
+                                    <span>
+                                        <label class="iLabel" for="range">Range: </label>
+                                        <input class="iText" type="range" name="points" min="1" max="10">
+                                    </span>
+                                </span>
+                            </article>
+                            <article>
+                                <span class="form-article-input">
+                                    <span>
+                                        <label class="iLabel" for="tel">Tel: </label>
+                                        <input class="iText" type="tel" name="usrtel">
+                                    </span>
+                                </span>
+                                <span class="form-article-input">
+                                    <span>
+                                        <label class="iLabel" for="time">Time: </label>
+                                        <input class="iText" type="time" name="usr_time">
+                                    </span>
+                                </span>
+                            </article>
+                            <article>
+                                <span class="form-article-input">
+                                    <span>
+                                        <label class="iLabel" for="url">Url: </label>
+                                        <input class="iText" type="url" name="homepage">
+                                    </span>
+                                </span>
+                                <span class="form-article-input">
+                                    <span>
+                                        <label class="iLabel" for="week">Week: </label>
+                                        <input class="iText" type="week" name="year_week">
+                                    </span>
+                                </span>
+                            </article>
+                        </header>
+                        <footer>
+                            <article>
+                                <center>
+                                    <input class="iSubmit" type="submit" value="Submit">
+                                </center>
+                            </article>
+                        </footer>
+                    </article>
+                </form>
+            </article>
+        </section>
+        <hr>
+        <section>
+            <h1>
+                <center><label>Attributes for Input</label></center>
+            </h1>
+            <article>
+                <header>
+                    <article>
+                        <fieldset>
+                            <legend>Contenteditable Attribute</legend>
+                            <p contenteditable="true">Contenteditable : ช่วยให้เราทำการแก้ไขหรือวรรคข้อความได้</p>
+                        </fieldset>
+                    </article>
+                    <article>
+                        <fieldset>
+                            <legend>Data Attribute</legend>
+                            <p>data-itemName='Test_1'</p>
+                            <p id='items' data-itemName='Test_1'>
+                                ทำให้เราเพิ่มแอตทริบิวต์ที่กำหนดเองได้
+                                โดยใช้แอตทริบิวต์ 'data-' ตามด้วยชื่อที่ต้องการ </p>
+                            <input class="iSubmit" style="margin-top: 2px;" onclick="GetData();" type="submit"
+                                value="Submit">
+                        </fieldset>
+                    </article>
+                    <article>
+                        <fieldset>
+                            <legend>Datetime Attribute</legend>
+                            <time datetime="2020-05-14T00:01">14-May </time>
+                            <span>มีไว้สำหรับการนำเสนอวันที่และเวลาในรูปแบบที่เครื่องอ่านได้
+                                ตัวอย่างนี้สามารถช่วยให้ผู้ใช้เพิ่มเหตุการณ์ในปฏิทินของผู้ใช้เองได้</span>
+                            <span>
+                                หมายเหตุ:องค์ประกอบเวลาไม่ได้แสดงผลเป็นสิ่งพิเศษในเบราว์เซอร์หลัก ๆ
+                            </span>
+                        </fieldset>
+                    </article>
+                    <article>
+                        <fieldset>
+                            <legend>Download Attribute</legend>
+                            <a href="/workshop.html" download>Download PDF</a>
+                        </fieldset>
+                    </article>
+                    <article>
+                        <fieldset>
+                            <legend>Draggable Attribute</legend>
+                            <p draggable="true">ข้อความที่สามารถใช้เม้าส์ลากได้</p>
+                            <p draggable="false">ข้อความที่สามารถใช้เม้าส์ลากไม่ได้</p>
+                        </fieldset>
+                    </article>
+                    <article>
+                        <fieldset>
+                            <legend>พิมพ์ Attribute ชื่อ "hidden" เพื่อทำการซ่อน Button</legend>
+                            <p id="Ex_hidden" style="box-shadow: inset 1px 0 1px 1px #29627e; width: 80%;"
+                                contenteditable="true">
+                                hidden
+                            </p>
+
+                            </span>
+                            <input onclick="Addclass_hidden();" type="submit" value="เพิ่ม/ลบ Attribute">
+                            <span>
+                                <label> ผลลัพธ์ : </label>
+                                <button id="btn_hidden" hidden>Button</button>
+                            </span>
+                        </fieldset>
+                    </article>
+                </header>
+                <footer>
+
+                </footer>
+            </article>
+        </section>
+
+
+    </main>
+
+
+    <footer class="ifooter">
+        <center>
+            All rights reserved © 2020 MyCode
+        </center>
+    </footer>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+
+</html>

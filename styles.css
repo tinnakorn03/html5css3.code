@@ -1,0 +1,526 @@
+
+body {
+    margin: 0em;
+}
+
+.iheader {
+    background: orangered;
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+}
+
+/*----------------------------nav----------------------------*/
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar .btnNav ,.navbar a  {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: orange;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .active {
+    background-color: orange;
+  }
+
+/*----------------------------main----------------------------*/
+main{
+  padding: 2%;
+  width: 72%; /*ที่ไม่ใช้ main เต็ม 75% เพราะเผื่อพื่นที่ให้กับ padding ของ main เองและของ aside*/
+  margin-bottom: 4%;
+}
+
+ /*---------------------------- aside ----------------------------*/
+ aside {
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    width: 25%;
+    color: #29627e;
+}
+
+ .forecast ,.calendar {
+    padding: .3rem;
+    background-color: #eee;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+.forecast > h1,
+.day {
+    margin: .5rem;
+    padding: .3rem;
+    font-size: 1.2rem;
+}
+
+.day-forecast-1 {
+    background: right/contain content-box border-box no-repeat
+        url('/image/rain-svgrepo-com.svg') white;
+}
+.day-forecast-2 {
+    background: right/contain content-box border-box no-repeat
+        url('/image/storm-thunder-svgrepo-com.svg') white;
+}
+.day-forecast-3 {
+    background: right/contain content-box border-box no-repeat
+        url('/image/sun-svgrepo-com.svg') white;
+}
+
+.day > h2,
+.day > p {
+    margin: .2rem;
+    font-size: 1rem;
+}
+
+iframe{
+    width: 100%;
+    height: -webkit-fill-available;
+}
+iframe[seamless] ,section>iframe[seamless] {
+    border: none;
+}
+
+section>iframe {
+  width: 98%;
+}
+/*---------------------------- footer ----------------------------*/
+.ifooter {
+    background-color: dimgrey;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    font-size: 14px;
+    position: fixed;
+}
+
+/*---------------------------- form ----------------------------*/
+.form-article-input{
+    width: 49%;
+}
+
+.form-article-input-left{
+    width: 49%;
+    float: left;
+}
+.form-article-input-right{
+    width:49%;
+    float: right;
+}
+
+input.iText{
+    border-radius:5px;
+    border: 2px solid dodgerblue;
+    width: 20rem;
+    height: 1.3rem;
+    display: table-cell;
+    margin-bottom: 15px;
+}
+
+.iLabel{
+    width: 6.5rem;
+    text-align: left;
+    display: table-cell;
+    margin-bottom: 15px;
+}
+
+.iSubmit{
+    margin-top: 2rem;
+    border-radius:7px;
+    border: 2px solid green;
+    background: green;
+    width: 7rem;
+    height: 2rem;
+}
+
+/*---------------------------- canvas & svg ----------------------------*/
+#mycanvas ,#mycanvas2{
+   border:1px solid gray;
+  }
+
+#mycanvas3{
+  border:1px solid gray;
+  width: 300px; 
+  height:180px;
+  }
+
+#mycanvas4{
+  border:1px solid gray;
+  width: 300px; 
+  height:150px;
+  }
+
+  #cir:hover{ fill:red} 
+
+
+/*/////////////////////////////////////////////////////////////////////*/
+/*================================ CSS3 ===============================*/
+
+/*----------------------------borders----------------------------*/
+.borders1 {
+  width: 180px;
+  height: 180px;
+  background-color: yellow;
+  -moz-box-shadow: 10px 10px 5px #888888; /* Old Firefox */
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.borders2 {
+  border: 15px solid transparent;
+  width: 180px;
+  height: 180px;
+  padding: 10px 20px;
+}
+
+#round {
+  -moz-border-image: url(/image/bb2.png) 30 30 round; /* Old Firefox */
+  -webkit-border-image: url(/image/bb2.png) 30 30 round; /* Safari and Chrome */
+  -o-border-image: url(/image/bb2.png) 30 30 round; /* Opera */
+  border-image: url(/image/bb2.png) 30 30 round;
+}
+
+#stretch {
+  -moz-border-image: url(/image/bb2_1.png) 30 30 stretch; /* Old Firefox */
+  -webkit-border-image: url(/image/bb2_1.png) 30 30 stretch; /* Safari and Chrome */
+  -o-border-image: url(/image/bb2_1.png) 30 30 stretch; /* Opera */
+  border-image: url(/image/bb2_1.png) 30 30 stretch;
+}
+
+/*--------------------Modal-----------------------*/
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; /* จัดตำแหน่งอัตโนมัติอิงตามความห่าง ซ้าย และ ขวา*/
+  /*background-color: rgb(0,0,0); */
+  background-color: rgba(0,0,0,0.4); 
+}
+
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*--------------------Modal-----------------------*/
+
+/*----------------------------backgrounds----------------------------*/
+.backgroundimg{
+  background-image: url('/image/background_23.jpg');
+  background-size: cover;
+  height: 500px;
+}
+
+/*----------------------------Text Effects----------------------------*/
+.tf_h2 {text-shadow: 6px 3px 5px #46b830;}
+.tf_h3 {text-shadow: 6px 3px 5px dodgerblue;}
+.tf_1-1{
+   text-shadow:-1px -1px #FFFFFF, 1px 1px #333333;
+}
+.tf_1-2{
+  text-shadow:-1px -1px #FFFFFF, 1px 1px #333333;
+}
+
+.p_tf{
+  width:400px; 
+  border:2px solid brown;
+  word-wrap:break-word;
+
+}
+
+/*----------------------------Fonts----------------------------*/
+@font-face {
+  font-family: myFirstFont;
+  src: url("font/fc_muffin_regular-webfont.woff"); /* IE9+ */
+}
+
+.ex-font-1{
+  font-family: myFirstFont;
+  font-size: 24px;
+  width:100%;
+}
+
+@font-face {
+  font-family: myFirstFont2;
+  src: url('font/FC\ Muffin\ Italic.ttf'),url('font/FC\ Muffin\ Italic.otf');/* IE9+ */
+}
+
+.ex-font-2{
+  font-family: myFirstFont2;
+  font-size: 24px;
+  width:100%;
+}
+
+/*---------------------------- 2D Transforms----------------------------*/
+
+.div-2d {  
+  width:100px; 
+  height:75px; 
+  background-color:pink;
+  border:1px solid black;
+ } 
+
+.div-2d1{
+  width:100px;
+  height:130px;
+  background-color:pink;
+
+  transform:rotate(30deg); 
+  -ms-transform:rotate(30deg); /* IE 9 */ 
+  -moz-transform:rotate(30deg); /* Firefox */
+  -webkit-transform:rotate(30deg); /* Safari and Chrome */
+  -o-transform:rotate(30deg); /* Opera */
+
+}
+
+
+
+.div-2d2-1{
+  margin:100px;
+  transform:scale(2px,3px);
+  -ms-transform:scale(2,3); /* IE 9 */ 
+  -moz-transform:scale(2,3); /* Firefox */ 
+  -webkit-transform:scale(2,3); /* Safari and Chrome */ 
+  -o-transform:scale(2,3); /* Opera */
+}
+
+
+.div-2d3-1{
+  transform:translate(200px,50px);
+  -ms-transform:translate(200px,50px); /* IE 9 */ 
+  -moz-transform:translate(200px,50px); /* Firefox */ 
+  -webkit-transform:translate(200px,50px); /* Safari and Chrome */ 
+  -o-transform:translate(200px,50px); /* Opera */
+}
+
+.div-2d4-1{
+  transform:skew(30deg,20deg); 
+  -ms-transform:skew(30deg,20deg); /* IE 9 */ 
+  -moz-transform:skew(20deg,10deg); /* Firefox */
+  -webkit-transform:skew(30deg,20deg); /* Safari and Chrome */ 
+  -o-transform:skew(30deg,20deg); /* Opera */
+}
+
+.div-matrix {
+  width:100px; 
+  height:75px; 
+  background-color:pink; 
+  border:1px solid black; 
+  margin: auto auto;
+ } 
+.div-matrix-2 {
+    transform:matrix(1,0,0,1,0,0); 
+    -ms-transform:matrix(1,0,0,1,0,0); /* IE 9 */ 
+    -moz-transform:matrix(1,0,0,1,0,0);/* Firefox */
+    -webkit-transform:matrix(1,0,0,1,0,0); /* Safari and Chrome */ 
+    -o-transform:matrix(1,0,0,1,0,0); /* Opera */
+ } 
+
+
+/*---------------------------- 3D Transforms----------------------------*/
+.div-3d {
+  width:100px;
+  height:75px; 
+  background-color:pink; 
+  border:1px solid black;
+ }
+.div-3d1 {
+transform:rotateX(140deg); 
+-webkit-transform:rotateX(180deg); /* Safari and Chrome */ 
+-moz-transform:rotateX(140deg); /* Firefox */
+} 
+
+.div-3d2 {
+  transform:rotateY(130deg);
+  -webkit-transform:rotateY(130deg); /* Safari and Chrome */
+  -moz-transform:rotateY(130deg); /* Firefox */
+
+}
+
+.div-3d3
+{
+  transform:perspective(100px) rotateX(50deg); 
+ -webkit-transform:perspective(100px) rotateX(50deg); /* Safari and Chrome */ 
+ -moz-transform:perspective(40px) rotateX(50deg); /* Firefox */
+} 
+
+.div-3d4{
+  transform:perspective(60px) rotateY(50deg); 
+  -webkit-transform:perspective(60px) rotateY(50deg); /* Safari and Chrome */ 
+  -moz-transform:perspective(60px) rotateY(50deg); /* Firefox */
+} 
+
+
+
+
+/*----------------------------Transitions----------------------------*/
+.div-transition-1{
+  width:10%; 
+  height:100px; 
+  background:pink; 
+  transition:width 2s; 
+  -moz-transition:width 2s; /* Firefox 4 */ 
+  -webkit-transition:width 2s; /* Safari and Chrome */ 
+  -o-transition:width 2s; /* Opera */
+  } 
+.div-transition-1:hover 
+  {width:100%;} 
+
+
+.div-transition-2 {
+  width:100px; 
+  height:100px; 
+  background:pink;
+  transition:width 2s, height 2s; 
+  -moz-transition:width 2s, height 2s, -moz-transform 2s; /* Firefox 4 */ 
+  -webkit-transition:width 2s, height 2s, -webkit-transform 2s; /* Safari and Chrome */
+  -o-transition:width 2s, height 2s, -o-transform 2s; /* Opera */
+} 
+.div-transition-2:hover {
+  width:50px; 
+  height:50px; 
+  transform:rotate(180deg); 
+  -moz-transform:rotate(180deg); /* Firefox 4 */ 
+  -webkit-transform:rotate(180deg); /* Safari and Chrome */ 
+  -o-transform:rotate(180deg); /* Opera */
+} 
+
+
+/*----------------------------Animations----------------------------*/
+
+.div-animations-1 
+{
+    width:100px; 
+    height:100px;
+    background:pink; 
+    position:relative; 
+    animation:mytest 5s infinite; 
+    -moz-animation:mytest 5s infinite; /*Firefox*/
+    -webkit-animation:mytest 5s infinite; /*Safari and Chrome*/
+    -o-animation:mytest 5s infinite; /*Opera*/
+  } 
+  @keyframes mytest 
+      {from {left:0px;} to {left:400px;}} 
+  @-moz-keyframes mytest /*Firefox*/ 
+      {from {left:0px;} to {left:400px;}} 
+  @-webkit-keyframes mytest /*Safari and Chrome*/ 
+      {from {left:0%;} to {left:60%;}} 
+  @-o-keyframes mytest /*Opera*/ 
+      {from {left:0px;} to {left:400px;}} 
+
+
+.div-animations-2{
+  width:100px; 
+  height:100px;
+  background:pink; 
+  animation:myfirst 5s infinite;
+  -moz-animation:myfirst 5s infinite; /* Firefox */ 
+  -webkit-animation:myfirst 5s infinite; /* Safari and Chrome */ 
+  -o-animation:myfirst 5s infinite; /* Opera */
+} 
+  @keyframes myfirst
+  {from {background:pink;} 
+     to {background:blue;}} 
+  @-moz-keyframes myfirst /* Firefox */ 
+  {from {background:pink;} 
+     to {background:blue;}} 
+  @-webkit-keyframes myfirst /* Safari and Chrome */ 
+  {from {background:pink;} 
+     to {background:blue;}} 
+  @-o-keyframes myfirst /* Opera */ 
+  {from {background:pink;} 
+     to {background:blue;}} 
+
+.div-animations-3{
+    width:100px; 
+    height:100px; 
+    background:yellow; 
+    position:relative; 
+
+    animation-name:myfirst2; 
+    animation-duration:5s; 
+    animation-timing-function:linear; 
+    animation-delay:2s;
+    animation-iteration-count:infinite; 
+    animation-direction:alternate; 
+    animation-play-state:running;
+} 
+
+@keyframes myfirst2 
+{0% {background:yellow; left:0px; top:0px;} 
+25% {background:red; left:200px; top:0px;} 
+100% {background:pink; left:200px; top:200px;}} 

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /*Pseudo-element*/
+        /* :first-letter */
+        .a .a1 p:first-letter {
+            color: #ff0000;
+            font-size: xx-large
+        }
+
+        .a .a2 p.article:first-letter {
+            color: #ff0000
+        }
+
+        /* :first-line*/
+        .b .b1 p:first-line {
+            color: #0000ff
+        }
+
+        .b .b2 p:first-letter {
+            color: #ff0000;
+            font-size: xx-large
+        }
+
+        .b .b2 p:first-line {
+            color: #0000ff
+        }
+
+        /* :before*/
+        .c .c1 h1:before {
+            content: '🤣';
+        }
+
+        /* :after */
+        .d .d1 h1:after {
+            content: '🤣';
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <article class="a">
+        <article class="a1">
+            <p>EX Pseudo-element</p>
+        </article>
+
+        <article class="a2">
+            <p class="article">EX Pseudo-element</p>
+        </article>
+    </article>
+
+    <hr>
+    <article class="b">
+        <article class="b1">
+            <p class="article">EX<br>Pseudo-element</p>
+        </article>
+        <article class="b2">
+            <p class="article">EX<br>Pseudo-element</p>
+        </article>
+    </article>
+
+    <hr>
+    <article class="c">
+        <article class="c1">
+            <h1>EX Pseudo Element</h1>
+        </article>
+    </article>
+
+    <hr>
+    <article class="d">
+        <article class="d1">
+            <h1>EX Pseudo Element</h1>
+        </article>
+    </article>
+    <hr>
+
+</body>
+
+</html>
