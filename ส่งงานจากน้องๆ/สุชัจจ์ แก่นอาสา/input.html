@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Type</title>
+</head>
+<style>
+    @font-face {
+        font-family: 'FONT_INPUT';
+        src: url('/fonts/SarabunRegular.ttf');
+    }
+
+    * {
+        font-family: 'FONT_INPUT';
+    }
+
+    body {
+        margin-top: 30px;
+    }
+
+    aside {
+        float: left;
+        min-width: 300px;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .flex>div {
+        min-width: 250px;
+        margin-right: 30px;
+        margin-bottom: 5px;
+    }
+
+    div>input {
+        width: 100%;
+        margin-top: 10px;
+        border: 1px solid rgb(175, 175, 175);
+        border-radius: 2px;
+        padding: 5px;
+    }
+
+    .card {
+        border: 1px solid rgb(212, 212, 212);
+        border-bottom: 0px;
+        margin: 33px 33px;
+    }
+
+    .card>.header {
+        display: block;
+        background-color: rgb(243, 243, 243);
+        border-bottom: 1px solid rgb(212, 212, 212);
+        padding: 12px;
+    }
+
+    .card>span {
+        border-bottom: 1px solid rgb(212, 212, 212);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px;
+    }
+
+    .f-mute {
+        color: gray
+    }
+
+    .radius-svg {
+        width: 200px;
+        height: 200px;
+        padding: 5px;
+        border-radius: 50%;
+        border: 1px solid rgb(230, 230, 230);
+    }
+
+    .radius-svg>svg {
+        border-radius: 50%;
+        border: 1px solid rgb(243, 243, 243);
+        background-color: rgb(228, 228, 228);
+        width: 200px;
+        height: 200px;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .badges {
+        color: #FFF;
+        padding: 5px;
+        border-radius: 5px;
+        padding: .25em .4em;
+        font-size: 75%;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .bgcolor1 {
+        background-color: #FFBE0B;
+    }
+
+    .bgcolor2 {
+        background-color: #FB5607;
+    }
+
+    .bgcolor3 {
+        background-color: #FF006E;
+    }
+
+    .bgcolor4 {
+        background-color: #8338EC;
+    }
+
+    .bgcolor5 {
+        background-color: #3A86FF;
+    }
+
+    label {
+        font-weight: 600;
+    }
+
+    .card>.active:hover {
+        cursor: pointer;
+        background-color: rgb(212, 212, 212);
+    }
+
+    a {
+        color: #3A86FF;
+        text-decoration: none;
+    }
+    .menu{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+    .badges {
+        color: #FFF;
+        padding: 5px;
+        border-radius: 5px;
+        padding: .25em .4em;
+        font-size: 80%;
+        font-weight: 700;
+        line-height: 1;
+    }
+    .card-menu{
+        width: 150px;
+        margin: 0px 20px 20px 0px;
+    }
+    .card-menu>div{
+        cursor: pointer;
+        border-radius: 15px;
+        border: 1px solid rgba(221, 221, 221, 0.658);
+    }
+    .card-menu>div>div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 15px;
+        padding: 5px 10px;
+    }
+    .card-menu>div>div:hover{
+        background-color: rgba(221, 221, 221, 0.658);
+    }
+    hr{
+        border: 1px solid rgba(221, 221, 221, 0.658);
+        margin: 0px 20px;
+    }
+    .card-menu>div>.active{
+        background-color: rgba(221, 221, 221, 0.658);
+    }
+</style>
+
+<body>
+    <div class="menu card-menu">
+        <div>
+            <div onclick="location.href='index.html'">
+                <div class="badges bgcolor1">INDEX</div>
+                <div><img src="/images/home.svg" alt="[index:html]"></div>
+            </div>
+            <hr>
+            <div onclick="location.href='login.html'">
+                <div class="badges bgcolor2">LOGIN</div>
+                <div><img src="/images/log-in.svg" alt="[login:html]"></div>
+            </div>
+            <hr>
+            <div class="active">
+                <div class="badges bgcolor3">INPUT</div>
+                <div><img src="/images/file-text.svg" alt="[input:html]"></div>
+            </div>
+            <hr>
+            <div onclick="location.href='card.html'">
+                <div class="badges bgcolor4">CARD</div>
+                <div><img src="/images/credit-card.svg" alt="[card:html]"></div>
+            </div>
+        </div>
+    </div>
+    <aside>
+        <div class="center">
+            <div class="radius-svg">
+                <svg>
+                    <circle cx="100" cy="80" r="30" fill="rgb(170, 170, 170)" />
+                    <rect x="28" y="130" rx="40" width="150" height="70" fill="rgb(170, 170, 170)" />
+                </svg>
+            </div>
+        </div>
+        <div class="card">
+            <span class="header">Website</span>
+            <span class="active"><a href="index.html">index.com</a></span>
+        </div>
+        <div class="card">
+            <span>
+                <div class="f-mute">Activity</div>
+            </span>
+            <span class="active">
+                <b>Shares</b>
+                <div class="badges bgcolor1">128</div>
+            </span>
+            <span class="active">
+                <b>Likes</b>
+                <div class="badges bgcolor2">13</div>
+            </span>
+            <span class="active">
+                <b>Posts</b>
+                <div class="badges bgcolor3">37</div>
+            </span>
+            <span class="active">
+                <b>Followers</b>
+                <div class="badges bgcolor4">78</div>
+            </span>
+        </div>
+    </aside>
+    <div class="flex">
+        <div>
+            <label>First name</label><br>
+            <input type="text" placeholder="First name">
+        </div>
+        <div>
+            <label>Last name</label><br>
+            <input type="text" placeholder="Last name">
+        </div>
+    </div>
+    <div class="flex">
+        <div>
+            <label>Phone</label><br>
+            <input type="tel" placeholder="enter phone">
+        </div>
+        <div>
+            <label>Mobile</label><br>
+            <input type="tel" placeholder="enter mobile number">
+        </div>
+    </div>
+    <div class="flex">
+        <div>
+            <label>Email</label><br>
+            <input type="email" placeholder="you@email.com">
+        </div>
+        <div>
+            <label>Location</label><br>
+            <input type="text" placeholder="somewhere">
+        </div>
+    </div>
+    <div class="flex">
+        <div>
+            <label>Password</label><br>
+            <input type="password" placeholder="password">
+        </div>
+        <div>
+            <label>Verity</label><br>
+            <input type="password" placeholder="password2">
+        </div>
+    </div>
+    <div class="flex">
+        <div>
+            <label>Birthday</label><br>
+            <input type="date" placeholder="dd/mm/yyy">
+        </div>
+    </div>
+</body>
+
+</html>

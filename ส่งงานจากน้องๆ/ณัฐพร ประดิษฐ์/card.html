@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Card</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: rgb(235, 235, 235);
+      }
+      .card-body {
+        margin-top: 120px;
+        height: 300px;
+        width: 490px;
+        border: 5px solid rgb(255, 203, 32);
+        border-radius: 10px;
+        background: white;
+        position: absolute;
+        z-index: 100;
+        margin-left: 0px;
+      }
+      .icon-png {
+        margin-top: 80px;
+        height: 100px;
+        border: 5px solid rgb(255, 255, 255);
+        border-radius: 70px;
+        background: white;
+        position: absolute;
+        z-index: 200;
+        margin-left: 200px;
+      }
+      .card {
+        width: 500px;
+        height: 500px;
+        background: rgb(255, 203, 32);
+        margin: auto;
+        margin-top: 50px;
+        position: relative;
+        border-radius: 20px;
+      }
+      p.name {
+        text-align: center;
+        margin-top: 80px;
+        font-weight: 550;
+        font-size: 20px;
+      }
+      p.address {
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+      }
+      p.text {
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+      }
+      p.text2 {
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+      }
+      hr {
+        width: 350px;
+        border: 2px solid rgb(194, 194, 194);
+        border-radius: 5px;
+        background-color: rgb(194, 194, 194);
+      }
+      .fa-facebook {
+        font-size: 28px;
+        color: rgb(255, 255, 255);
+        margin-top: 445px;
+        z-index: 250;
+        position: absolute;
+        margin-left: 205px;
+      }
+      .fa-google-plus {
+        font-size: 28px;
+        color: rgb(255, 255, 255);
+        margin-top: 445px;
+        z-index: 250;
+        position: absolute;
+        margin-left: 235px;
+      }
+      .fa-twitter {
+        font-size: 28px;
+        color: rgb(255, 255, 255);
+        margin-top: 445px;
+        z-index: 250;
+        position: absolute;
+        margin-left: 280px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img class="icon-png" src="icon-card.png" alt="icon-profile" />
+      <div class="card-body">
+        <p class="name">Nattaporn Pradit</p>
+        <p class="address">
+          <i class="fa fa-map-marker" style="font-size: 20px;"></i> California,
+          USA.
+        </p>
+        <hr />
+        <p class="text">This is the Workshop for HTML5 & CSS3</p>
+        <p class="text2">Thank you for the training.</p>
+      </div>
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-google-plus"></i>
+      <i class="fa fa-twitter"></i>
+    </div>
+  </body>
+</html>

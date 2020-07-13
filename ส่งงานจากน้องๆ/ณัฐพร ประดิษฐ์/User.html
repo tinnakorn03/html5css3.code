@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>User</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: rgb(235, 235, 235);
+    }
+
+    section {
+      display: flex;
+    }
+
+    .all {
+      flex: 1.5;
+      background: rgb(255, 246, 166);
+      padding: 20px;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+      border: 5px solid rgb(255, 255, 255);
+      border-radius: 70%;
+      background-color: white;
+    }
+
+
+    article {
+      width: 600px;
+      height: 775px;
+      flex: 3;
+      background-color: #ffd4d4;
+      padding: 10px;
+    }
+
+    /* Style the footer */
+
+    /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+    @media (max-width: 600px) {
+      section {
+        flex-direction: column;
+      }
+    }
+
+    .row-web {
+      flex: 1.5;
+      border: 3px solid #5c5c5ca4;
+      width: 350px;
+      margin: auto;
+      margin-top: 20px;
+      border-radius: 5px;
+
+    }
+
+    .row-act {
+      flex: 1.5;
+      border: 3px solid #5c5c5ca4;
+      width: 350px;
+      margin: auto;
+      margin-top: 20px;
+      border-radius: 5px;
+
+    }
+
+    .row-1,
+    .row-3 {
+      background: #5c5c5ca4;
+      color: seashell;
+    }
+
+    .row-1,
+    .row-2,
+    .row-3,
+    .row-4,
+    .row-5,
+    .row-6,
+    .row-7 {
+
+      padding: 10px;
+    }
+
+    .row-2,
+    .row-4,
+    .row-5,
+    .row-6,
+    .row-7 {
+      border-top: 2px solid #5c5c5ca4;
+    }
+
+    label {
+      margin-left: 15px;
+      margin-top: 10px;
+      padding: 5px;
+    }
+
+    .row-article {
+      padding: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="all">
+
+
+      <center>
+        <div class="image">
+          <img src="icon.png"></img></div>
+      </center>
+
+      <div class="row-web">
+        <div class="col">
+          <div class="row-1">
+            <label>Website</label>
+          </div>
+          <div class="row-2">
+            <label>Google.com</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-act">
+        <div class="col">
+          <div class="row-3">
+            <column><label>Activity</label></column>
+          </div>
+          <div class="row-4">
+            <column><label>Shares</label></column>
+            <column style="float: right;"><label>112</label></column>
+          </div>
+          <div class="row-5">
+            <column><label>Likes</label></column>
+            <column style="float: right;"><label>79</label></column>
+          </div>
+          <div class="row-6">
+            <column><label>Posts</label></column>
+            <column style="float: right;"><label>82</label></column>
+          </div>
+          <div class="row-7">
+            <column><label>Followers</label></column>
+            <column style="float: right;"><label>32</label></column>
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <article>
+      <div class="row-article">
+        <div class="row-name" style="margin-bottom: 12px;">
+          <column><label style="margin-left: 9.3%;">First name</label></column>
+          <column><label style="margin-left: 40%;">Last name</label></column>
+        </div>
+
+        <div class="row-input-name" style="margin-bottom: 12px;">
+          <column><input type="text" style="margin-left: 10%;"></column>
+          <column><input type="text" style="margin-left: 30.9%;"></column>
+        </div>
+
+        <div class="row-phone" style="margin-bottom: 12px;">
+          <column><label style="margin-left: 9.3%;">Phone</label></column>
+          <column><label style="margin-left: 43.3%;">Mobile</label></column>
+        </div>
+
+        <div class="row-input-phone" style="margin-bottom: 12px;">
+          <column><input type="text" style="margin-left: 10%;"></column>
+          <column><input type="text" style="margin-left: 30.9%;"></column>
+        </div>
+
+        <div class="row-email" style="margin-bottom: 12px;">
+          <column><label style="margin-left: 9.3%;">Email</label></column>
+          <column><label style="margin-left: 44%;">Location</label></column>
+        </div>
+
+        <div class="row-input-email" style="margin-bottom: 12px;">
+          <column><input type="text" style="margin-left: 10%;"></column>
+          <column><input type="text" style="margin-left: 30.9%;"></column>
+        </div>
+
+        <div class="row-password" style="margin-bottom: 12px;">
+          <column><label style="margin-left: 9.3%;">Password</label></column>
+          <column><label style="margin-left: 40.7%;">Verify</label></column>
+        </div>
+
+        <div class="row-input-password" style="margin-bottom: 12px;">
+          <column><input type="text" style="margin-left: 10%;"></column>
+          <column><input type="text" style="margin-left: 30.9%;"></column>
+        </div>
+
+        <div class="row-Bday" style="margin-bottom: 12px;">
+          <column><label style="margin-left: 9.3%;">Birthday</label></column>
+        </div>
+
+        <div class="row-input-bday">
+          <column><input type="date" style="margin-left: 10%;"></column>
+        </div>
+      </div>
+    </article>
+  </section>
+</body>
+
+</html>

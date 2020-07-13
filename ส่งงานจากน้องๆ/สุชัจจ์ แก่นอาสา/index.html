@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkShop2: CSS</title>
+</head>
+<style>
+    @font-face {
+        font-family: 'FONT_INDEX';
+        src: url('/fonts/SarabunRegular.ttf');
+    }
+    body {
+        font-family: 'FONT_INDEX';
+        margin-top: 30px;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+    }
+
+    .center>button {
+        margin-top: 30px;
+        background-color: green;
+        border-radius: 8px;
+        border: none;
+        padding: 5px 20px;
+    }
+
+    tr:nth-child(odd) {
+        background-color: rgb(214, 214, 214);
+    }
+
+    th,
+    tr:nth-child(even),
+    tr:nth-child(even)>td,
+    tr:nth-child(even)>th {
+        border: 1px solid rgb(214, 214, 214);
+    }
+
+    th {
+        background-color: white;
+        font-size: 18px;
+    }
+
+    td {
+        font-size: 16px;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex-container>div {
+        margin-bottom: 10px;
+        width: 100px;
+    }
+
+    .flex-container>.w-margin {
+        margin-bottom: 10px;
+        margin-right: 10px;
+        width: 250px;
+    }
+
+    table {
+        border: 1px solid rgb(214, 214, 214);
+    }
+
+    table,
+    th,
+    td {
+        margin: auto;
+        border-collapse: collapse;
+        text-align: left;
+        padding: 5px;
+    }
+
+    .w-100 {
+        width: 100px;
+    }
+
+    .w-150 {
+        width: 150px;
+    }
+
+    .w-200 {
+        width: 200px;
+    }
+
+    input[type="text"] {
+        margin-right: 5px;
+        border: 2px solid rgb(49, 131, 207);
+        border-radius: 5px;
+        width: 100%;
+        min-width: 180px;
+        height: 20px;
+    }
+    .menu{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+    .badges {
+        color: #FFF;
+        padding: 5px;
+        border-radius: 5px;
+        padding: .25em .4em;
+        font-size: 80%;
+        font-weight: 700;
+        line-height: 1;
+    }
+    .bgcolor1 {
+        background-color: #FFBE0B;
+    }
+
+    .bgcolor2 {
+        background-color: #FB5607;
+    }
+
+    .bgcolor3 {
+        background-color: #FF006E;
+    }
+
+    .bgcolor4 {
+        background-color: #8338EC;
+    }
+
+    .bgcolor5 {
+        background-color: #3A86FF;
+    }
+    .card-menu{
+        width: 150px;
+        margin: 0px 20px 20px 0px;
+    }
+    .card-menu>div{
+        cursor: pointer;
+        border-radius: 15px;
+        border: 1px solid rgba(221, 221, 221, 0.658);
+    }
+    .card-menu>div>div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 15px;
+        padding: 5px 10px;
+    }
+    .card-menu>div>div:hover{
+        background-color: rgba(221, 221, 221, 0.658);
+    }
+    hr{
+        border: 1px solid rgba(221, 221, 221, 0.658);
+        margin: 0px 20px;
+    }
+    .card-menu>div>.active{
+        background-color: rgba(221, 221, 221, 0.658);
+    }
+</style>
+
+<body>
+    <div class="menu card-menu">
+        <div>
+            <div class="active">
+                <div class="badges bgcolor1">INDEX</div>
+                <div><img src="/images/home.svg" alt="[index:html]"></div>
+            </div>
+            <hr>
+            <div onclick="location.href='login.html'">
+                <div class="badges bgcolor2">LOGIN</div>
+                <div><img src="/images/log-in.svg" alt="[login:html]"></div>
+            </div>
+            <hr>
+            <div onclick="location.href='input.html'">
+                <div class="badges bgcolor3">INPUT</div>
+                <div><img src="/images/file-text.svg" alt="[input:html]"></div>
+            </div>
+            <hr>
+            <div onclick="location.href='card.html'">
+                <div class="badges bgcolor4">CARD</div>
+                <div><img src="/images/credit-card.svg" alt="[card:html]"></div>
+            </div>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div>
+            ชื่อ :
+        </div>
+        <div class="w-margin">
+            <input type="text">
+        </div>
+        <div>
+            นามสกุล :
+        </div>
+        <div class="w-margin">
+            <input type="text">
+        </div>
+    </div>
+    <div class="flex-container">
+        <div>
+            เบอร์โทร :
+        </div>
+        <div class="w-margin">
+            <input type="text">
+        </div>
+        <div>
+            E-mail :
+        </div>
+        <div class="w-margin"><input type="text"></div>
+    </div>
+    <div class="center">
+        <button>Submit</button>
+    </div>
+    <center><h3>รายชื่อ</h3></center>
+    <table>
+        <thead>
+            <tr>
+                <th class="w-100">ลำดับ</th>
+                <th class="w-200">ชื่อ-นามสกุล</th>
+                <th class="w-100">ที่อยู่</th>
+                <th class="w-150">เบอร์โทร</th>
+                <th class="w-200">E-mail</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>อภิชาต</td>
+                <td>พาณิชย์</td>
+                <td>0811111111</td>
+                <td>mail@gmail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>ปานเทพ</td>
+                <td>ผ่องเพ็ญ</td>
+                <td>0811111112</td>
+                <td>mail@gmail.com</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>ปวีณา</td>
+                <td>แสงดาว</td>
+                <td>0811111113</td>
+                <td>mail@gmail.com</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>รื่นฤดี</td>
+                <td>ปรัชญา</td>
+                <td>0811111114</td>
+                <td>mail@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>myWorkAssignment</title>
+
+    <style>
+        @font-face {
+            font-family: myFont;
+            src: url(th-chara_ver_2.00-webfont.woff);
+        }
+        
+        * {
+            font-family: myFont;
+            font-size: 20px;
+        }
+        
+        input[type=text],
+        input[type=email],
+        input[type=phone] {
+            border: 2px solid rgb(111, 207, 236);
+            border-radius: 10px;
+            height: 20px;
+        }
+        
+        input[type=button],
+        input[type=submit],
+        input[type=reset] {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            /* padding: 16px 32px; */
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2
+        }
+        
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        tbody>tr:hover {
+            background-color: papayawhip;
+        }
+        
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .flex-container>div {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width: 680px; border: groove; padding:20px; margin-left: auto; margin-right: auto; margin-top: 3%;">
+        <form>
+            <div class="flex-container">
+
+                <div class="form-group col-md">
+                    <label style="padding-right: 70px;
+                " for="name">ชื่อ:</label>
+                    <input class="form-control" type="text" id="name" name="name">
+                </div>
+                <div class="form-group col-md">
+                    <label for="lastname">นามสกุล:</label>
+                    <input class="form-control" type="text" id="lastname" name="lastname">
+                </div>
+
+                <div class="form-group col-md">
+                    <label for="phone">เบอร์โทรศัพท์:</label>
+                    <input class="form-control" type="phone" id="phone" name="phone">
+                </div>
+                <div class="form-group col-md-6">
+                    <label style="padding-right: 21px;
+                " for="Email">Email:</label>
+                    <input class="form-control" type="email">
+                </div>
+            </div>
+            <center>
+                <input type="submit" class="btn btn-success" value="Submit">
+            </center>
+        </form>
+    </div>
+    <div style="margin-top: 2%;">
+        <center>
+            <h3>รายชื่อ</h3>
+
+            <table name="myTable" id="myTable" class="table" style="width: 70%;">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ลำดับ</th>
+                        <th>ชื่อ - นามสกุล</th>
+                        <th>ที่อยู่</th>
+                        <th>เบอร์โทรศัพท์</th>
+                        <th>E-mail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>อภิชาต</td>
+                        <td>พาณิชย์</td>
+                        <td>0811111111</td>
+                        <td>mail@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>ปายเทพ</td>
+                        <td>ผ่องเพ็ญ</td>
+                        <td>0811111112</td>
+                        <td>mail@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>ปวีณา</td>
+                        <td>แสงดาว</td>
+                        <td>0811111113</td>
+                        <td>mail@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>รื่นฤดี</td>
+                        <td>ปรัชญา</td>
+                        <td>0811111114</td>
+                        <td>mail@gmail.com</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </center>
+    </div>
+
+
+</body>
+
+<script>
+    // var table = document.getElementById("myTable");
+    // $(document).ready(function() {
+    //     for (var i = 0; i <= 5, i++;) {
+    //         var row = table.insertRow(i);
+    //         var cell1 = row.insertCell(i);
+    //         cell1.innerHTML = "babara";
+    //     }
+    // });
+</script>
+
+</html>

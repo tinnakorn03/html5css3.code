@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      background-color: #1F618D;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 6px 15px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #85C1E9;
+      border-radius: 4px;
+      box-sizing: border-box;
+      width: 16rem;
+    }
+
+    input[type=text]:focus {
+      border: 3px solid #2874A6;
+    }
+
+    div {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      margin: auto;
+      box-shadow: 6px 6px 4px #1B2631  ;
+
+    }
+
+
+    input[type="tel"],
+    select {
+      width: 100%;
+      padding: 6px 15px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #85C1E9;
+      border-radius: 4px;
+      box-sizing: border-box;
+      width: 16rem;
+    }
+
+    input[type=text]:focus {
+      border: 3px solid #2874A6;
+    }
+
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 6px 15px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #85C1E9;
+      border-radius: 4px;
+      box-sizing: border-box;
+      width: 16rem;
+    }
+
+    input[type=text]:focus {
+      border: 3px solid #2874A6;
+    }
+
+    .iSubmit {
+      background-color: #74B43F;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #customers {
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 70%;
+      margin-top: 3rem;
+      margin-left: 13.3rem;
+      background-color: #A9CCE3;
+    }
+
+    #customers td,
+    #customers th {
+      border: 1px solid #7B7D7D;
+      padding: 8px;
+    }
+
+    #customers tr:nth-child(even) {
+      background-color: #7FB3D5 ;
+    }
+
+    #customers tr:hover {
+      background-color: #F8F9F9;
+    }
+
+    #customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #D7DBDD  ;
+      color: black;
+    }
+    div.card{
+      background-color: #AED6F1;
+    }
+  </style>
+</head>
+
+<body>
+  <br>
+  <form action="">
+    <article>
+      <center>
+        <div class="card" style="width: 60rem;">
+          
+            <row>
+              <colum>
+                <label for="fname">ชื่อ: </label> &nbsp; &nbsp; &nbsp; &nbsp;
+                <input type="text" name="fname" id="fname" required> &nbsp; &nbsp;
+
+              </colum>
+
+            </row>
+            <row>
+              <colum>
+                <label for="lname">นามสกุล:</label>
+                <input type="text" name="lname" id="lname" required>
+              </colum>
+
+            </row>
+            <br>
+            <row>
+              <colum>
+                <label for="tel">เบอร์: </label>&nbsp; &nbsp;&nbsp;
+                <input type="tel" name="usrtel" required>
+
+              </colum>
+
+            </row>
+            <row>
+              <colum>
+                <label for="email">&nbsp; &nbsp;&nbsp;email:</label>&nbsp; &nbsp;&nbsp;&nbsp;
+                <input type="email" name="email" id="email" required>
+              </colum>
+
+            </row>
+            <br>
+            <br>
+            <article>
+              <center>
+                <input class="iSubmit" type="submit" onclick="Submit()" value="Submit">
+              </center>
+            </article>
+
+
+        </div>
+
+      </center>
+    </article>
+
+
+
+  </form>
+  <br>
+  <center><h2><font color="#fffff">รายชื่อ</font></h2></center>
+  <table id="customers">
+    <tr>
+      <th>ลำดับ</th>
+      <th>ชื่อ-นามสกุล</th>
+      <th>ที่อยู่</th>
+      <th>เบอร์โทร</th>
+      <th>E-mail</th>
+
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Maria Anders</td>
+      <td>Bangkok</td>
+      <td>096-0932-112</td>
+      <td>mail1@gmail.com</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Christina Berglund</td>
+      <td>Nonthaburi</td>
+      <td>096-0932-542</td>
+      <td>mail2@gmail.com</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Francisco Chang</td>
+      <td>Ayutthaya</td>
+      <td>096-2322-156</td>
+      <td>mail3@gmail.com</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Roland Mendel</td>
+      <td>Chiangmai</td>
+      <td>096-0932-111</td>
+      <td>mail4@gmail.com</td>
+    </tr>
+
+
+  </table>
+
+
+
+
+
+</body>
+
+</html>

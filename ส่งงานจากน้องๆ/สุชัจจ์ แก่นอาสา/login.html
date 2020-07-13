@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<style>
+     @font-face {
+        font-family: 'FONT_LOGIN';
+        src: url('/fonts/SarabunRegular.ttf');
+    }
+    body{
+        font-family: 'FONT_LOGIN';
+        margin-top: 30px;
+    }
+    #continer{
+       border: 2px solid rgb(101, 211, 86);
+       padding: 80px 80px 40px 80px;
+       width: 300px;
+       margin: auto;
+    }
+    div#flex{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    .center{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    div>input[type="text"],input[type="password"]{
+        border: 2px solid rgb(28, 102, 172);
+        border-radius: 5px;
+        width: 200px;
+        height: 20px;
+    }
+    .center>button{
+        margin-top: 30px;
+    }
+    input[type="submit"]{
+        background-color: green;
+        border-radius: 8px;
+        border: none;
+        padding: 10px 40px;
+    }
+    .menu{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+    .badges {
+        color: #FFF;
+        padding: 5px;
+        border-radius: 5px;
+        padding: .25em .4em;
+        font-size: 80%;
+        font-weight: 700;
+        line-height: 1;
+    }
+    .bgcolor1 {
+        background-color: #FFBE0B;
+    }
+
+    .bgcolor2 {
+        background-color: #FB5607;
+    }
+
+    .bgcolor3 {
+        background-color: #FF006E;
+    }
+
+    .bgcolor4 {
+        background-color: #8338EC;
+    }
+
+    .bgcolor5 {
+        background-color: #3A86FF;
+    }
+    .card-menu{
+        width: 150px;
+        margin: 0px 20px 20px 0px;
+    }
+    .card-menu>div{
+        cursor: pointer;
+        border-radius: 15px;
+        border: 1px solid rgba(221, 221, 221, 0.658);
+    }
+    .card-menu>div>div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 15px;
+        padding: 5px 10px;
+    }
+    .card-menu>div>div:hover{
+        background-color: rgba(221, 221, 221, 0.658);
+    }
+    hr{
+        border: 1px solid rgba(221, 221, 221, 0.658);
+        margin: 0px 20px;
+    }
+    .card-menu>div>.active{
+        background-color: rgba(221, 221, 221, 0.658);
+    }
+</style>
+<body>
+    <div class="menu card-menu">
+        <div>
+            <div onclick="location.href='index.html'">
+                <div class="badges bgcolor1">INDEX</div>
+                <div><img src="/images/home.svg" alt="[index:html]"></div>
+            </div>
+            <hr>
+            <div class="active">
+                <div class="badges bgcolor2">LOGIN</div>
+                <div><img src="/images/log-in.svg" alt="[login:html]"></div>
+            </div>
+            <hr>
+            <div onclick="location.href='input.html'">
+                <div class="badges bgcolor3">INPUT</div>
+                <div><img src="/images/file-text.svg" alt="[input:html]"></div>
+            </div>
+            <hr>
+            <div onclick="location.href='card.html'">
+                <div class="badges bgcolor4">CARD</div>
+                <div><img src="/images/credit-card.svg" alt="[card:html]"></div>
+            </div>
+        </div>
+    </div>
+    <form class="m-from">
+        <div id="continer">
+            <div id="flex">
+                <div>User</div>
+                <div><input type="text"></div>
+            </div>
+            <div id="flex">
+                <div>Password</div>
+                <div><input type="password"></div>
+            </div>
+            <div class="center">
+                <input type="submit" formaction="index.html" value="Login">
+            </div>
+        </div>
+    </form>
+</body>
+</html>

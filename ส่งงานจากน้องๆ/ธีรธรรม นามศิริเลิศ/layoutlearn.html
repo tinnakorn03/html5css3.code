@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Document</title>
+    <style>
+        aside {
+            width: 30%;
+            height: 100%;
+            padding-left: 15px;
+            margin-left: 15px;
+            float: left;
+            font-style: italic;
+            /* background-color: lightgray; */
+        }
+        
+        img {
+            border-radius: 50%;
+            min-width: 50px;
+            width: 5%;
+        }
+        
+        .myForm {
+            display: flex;
+            order: 2;
+        }
+        
+        td {
+            width: 480px;
+            padding-right: 2%;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #ffffff;
+            border: groove;
+        }
+        
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+            border: groove;
+        }
+        /* Change the link color on hover */
+        
+        li a:hover {
+            background-color: #555;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ฝั่งซ็าย -->
+    <aside>
+        <img src="mystarwar.png" alt="Avatar" style="width:250px">
+        <p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+        <div class="w3-card-4" style="width: 450px;min-width: 20%; border: groove; box-shadow: none;">
+
+            <header class="w3-container w3-light-grey">
+                <h3>Website</h3>
+            </header>
+
+            <div class="w3-container">
+                <p>bootripets.com</p>
+                <!-- <hr> -->
+            </div>
+
+        </div>
+        <ul style="margin-top:2%; width: 450px;">
+            <header style="background-color: lightgray;" class="w3-container w3-light-grey">
+                <h3>this is header</h3>
+            </header>
+            <li style="z-index: 1;"><a href="#home">Home  <span class="w3-tag w3-round w3-right">8</span></a>
+            </li>
+            <li><a href="#news">News<span class="w3-tag w3-round w3-right">8</span></a></li>
+            <li><a href="#contact">Contact<span class="w3-tag w3-round w3-right">8</span></a></li>
+            <li><a href="#about">About<span class="w3-tag w3-round w3-right">8</span></a></li>
+        </ul>
+    </aside>
+    <!-- กลาง -->
+    <div style="margin-top: 5%; height: 100%;">
+        <form>
+            <div>
+                <form>
+                    <fieldset>
+                        <table>
+                            <tr>
+                                <td><label for="firstname">First Name</label></td>
+                                <td>
+                                    <label for="lastname">Last Name</label>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input name="firstname" style="width:100%" id="firstname" type="text">
+                                </td>
+                                <td>
+                                    <input name="lastname" style="width: 100%;" id="lastname" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="firstname">Phone</label></td>
+                                <td>
+                                    <label for="lastname">Mobile</label>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input name="firstname" style="width:100%" type="text">
+                                </td>
+                                <td>
+                                    <input name="lastname" style="width: 100%;" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="firstname">Email</label></td>
+                                <td>
+                                    <label for="lastname">Location</label>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input name="firstname" style="width:100%" type="text">
+                                </td>
+                                <td>
+                                    <input name="lastname" style="width: 100%;" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="firstname">Passowrd</label></td>
+                                <td>
+                                    <label for="lastname">Verify</label>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input name="firstname" style="width:100%" type="password">
+                                </td>
+                                <td>
+                                    <input name="lastname" style="width: 100%;" type="password">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="firstname">First Name</label></td>
+
+
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    <input name="lastname" style="width: 100%;" type="text">
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

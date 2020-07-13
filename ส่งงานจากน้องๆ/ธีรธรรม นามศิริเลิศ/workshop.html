@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        @font-face {
+            font-family: myFont;
+            src: url(th-chara_ver_2.00-webfont.woff);
+        }
+        
+        * {
+            font-family: myFont;
+        }
+        
+        div {
+            width: 150px;
+            height: 145px;
+            background-color: yellow;
+            box-shadow: 10px 10px 5px #888888;
+            text-align: center;
+        }
+        
+        div.div2 {
+            border: 8px solid #e6d45a;
+            padding: 20px 80px;
+            background: #67c8d7;
+            width: 100px;
+            border-radius: 45px;
+            margin-top: 50px;
+        }
+        
+        div.div3 {
+            /* border: 15px solid transparent; */
+            width: 250px;
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+        
+        #round {
+            /* -webkit-border-image: url(myborder.png) 30 30 round; */
+            /* Safari and Chrome */
+            border-image: url(myborder.png) 30 30 round;
+            /* background-color: white; */
+            background: transparent;
+            background-image: url(myborder.png);
+            background-repeat: no-repeat;
+            background-size: 290px 165px;
+        }
+        
+        #stretch {
+            /* -webkit-border-image: url(myborder.png) 30 30 stretch; */
+            /* Safari and Chrome */
+            background: transparent;
+            /* border-image: url(border2.png) 30 30 stretch; */
+            background-image: url(border2.png);
+            background-repeat: no-repeat;
+            background-size: 300px;
+        }
+        
+        .div4 {
+            width: 70px;
+            height: 100px;
+            background-color: pink;
+            transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+            /* IE 9 */
+            -moz-transform: rotate(30deg);
+            /* Firefox */
+            -webkit-transform: rotate(30deg);
+            /* Safari and Chrome */
+            -o-transform: rotate(30deg);
+            /* Opera */
+        }
+        
+        td {
+            box-sizing: 50px;
+        }
+    </style>
+    <title>Poopee</title>
+    <h1>ได้ฟอนต์แล้วจร้า</h1>
+</head>
+
+
+
+<body>
+    <table style="width:10%">
+        <tr>
+            <td>
+                <div>
+                    this is my box
+                </div>
+            </td>
+            <td><img src="mypac.gif"></td>
+            <td>
+                <div class="div2">
+                    this is my secound box
+                </div>
+            </td>
+            <td>
+                <div class="div3" id="round">this is 3</div>
+
+            </td>
+            <td>
+                <div class="div3" id="stretch">this is 4</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <canvas style="padding-top:50px;" id="mycanvas" width="400" height="300"></canvas>
+
+            </td>
+            <td>
+                <canvas id="mycanvas2" width="400" height="300"></canvas>
+
+            </td>
+            <td>
+                <svg width="200" height="200" style="border: 1px solid #ccc;">
+                    <line x1="0" y1="0" x2="200" y2="200"></line>
+                  </svg>
+
+                <svg width="200" height="200" style="border: 1px solid #ccc;">
+                    <line x1="200" y1="0" x2="0" y2="200" stroke="black"></line>
+                  </svg>
+
+
+
+            </td>
+            <td>
+                <svg width="200" height="200" style="border: 1px solid #ccc;">
+                    <line
+                      x1="100"
+                      y1="0"
+                      x2="100"
+                      y2="200"
+                      stroke="red"
+                      stroke-width="5"
+                    ></line>
+              
+                    <line
+                      x1="0"
+                      y1="100"
+                      x2="200"
+                      y2="100"
+                      stroke="blue"
+                      stroke-width="3"
+                    ></line>
+                  </svg>
+            </td>
+            <td>
+                <div class="div4">ข้อความของฉัน</div>
+
+            </td>
+        </tr>
+    </table>
+</body>
+<script>
+    var c3 = document.querySelector("#mycanvas");
+    var ctx3 = c3.getContext("2d");
+    ctx3.beginPath();
+    ctx3.moveTo(10, 10);
+    ctx3.lineTo(280, 10);
+    ctx3.lineTo(280, 140);
+    ctx3.lineTo(10, 140);
+    ctx3.lineTo(10, 10);
+    ctx3.fillStyle = "#aaa";
+    ctx3.fill();
+    ctx3.closePath();
+
+    ctx3.beginPath();
+    ctx3.moveTo(10, 10);
+    ctx3.lineTo(140, 80);
+    ctx3.lineTo(280, 10);
+    ctx3.fillStyle = "#888";
+    ctx3.fill();
+    ctx3.closePath();
+    //----------------------------------------------
+    setInterval(function() {
+
+    }, 20)
+    var c = document.querySelector("#mycanvas2");
+    var ctx = c.getContext("2d");
+    ctx.arc(200, 150, 50, 0, 2 * Math.PI);
+    ctx.fillStyle = "#ffff00 ";
+
+    ctx.fill();
+    ctx.beginPath();
+    ctx.moveTo(150, 105);
+    ctx.lineTo(210, 160);
+    ctx.lineTo(150, 180);
+    ctx.fillStyle = "#FFFFFF";
+    ctx.fill();
+    ctx.closePath();
+</script>
+
+</html>

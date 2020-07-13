@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      
+      .td-form {
+        
+       padding-top: 10px;
+       padding-bottom: 10px;
+      }
+      /* .table-form {
+        width: 100%;
+      } */
+      input {
+        width: 80%;
+        padding: 7px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        
+      }
+      label{
+        padding: 12px 0px 12px 0;
+        
+      }
+      .container{
+        border-radius: 10px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin-top: 5%;
+        width: 40%;
+        min-width: 500px;
+      }
+      button{
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor:pointer;
+        padding: 10px 15px;
+        margin-top:15px;
+      }
+      .table-tr:nth-child(even) {
+        background-color: #dddddd;
+     }
+     .data-table{
+         border-collapse: collapse;
+         width: 70%;
+         min-width: 500px;
+     }
+     th{
+         color: white;
+         background-color: black;
+         text-align: left;
+         padding: 5px;
+     }
+     .div-data{
+        margin-top: 30px;
+     }
+     .td-data{
+         padding: 5px;
+     }
+
+    </style>
+  </head>
+  <body>
+    <center>
+    <div class="container">
+      <form>
+          <div style="width: 100%">
+        <table>
+          <tr>
+            <td class="td-form "><label>ชื่อ</label></td>
+            <td class="td-form "><input type="text" /></td>
+            <td class="td-form "><label>นามสกุล</label></td>
+            <td class="td-form "><input type="text" /></td>
+          </tr>
+          <tr>
+            <td class="td-form "><label>เบอร์โทร</label></td>
+            <td class="td-form "><input type="text" /></td>
+            <td class="td-form "><label>E-mail</label></td>
+            <td class="td-form "><input type="email" /></td>
+          </tr>
+        </table>
+        <button type="submit" formaction="login.html">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div class="div-data">
+        <table class="data-table">
+            <tr class="table-tr">
+                <th style="border-top-left-radius: 5px; text-align: center">ลำดับ</th>
+                <th>ชื่อ-นามสกุล</th>
+                <th>ที่อยู่</th>
+                <th>เบอร์โทร</th>
+                <th style="border-top-right-radius: 5px;">E-mail</th>
+            </tr>
+            <tr class="table-tr">
+                <td class="td-data" style="text-align: center;">1</td>
+                <td class="td-data">อภิชาต</td>
+                <td class="td-data">พาณิชย์</td>
+                <td class="td-data">0811111111</td>
+                <td class="td-data">mail@gmail.com</td>
+            </tr>
+            <tr class="table-tr">
+                <td class="td-data" style="text-align: center;">2</td>
+                <td class="td-data">ปานเทพ</td>
+                <td class="td-data">ผ่องเพ็ญ</td>
+                <td class="td-data">0811111112</td>
+                <td class="td-data">mail@gmail.com</td>
+            </tr>
+            <tr class="table-tr">
+                <td class="td-data" style="text-align: center;">3</td>
+                <td class="td-data">ปวีณา</td>
+                <td class="td-data">แสงดาว</td>
+                <td class="td-data">0811111113</td>
+                <td class="td-data">mail@gmail.com</td>
+            </tr>
+            <tr>
+                <td class="td-data" style="text-align: center;">4</td>
+                <td class="td-data">รื่นฤดี</td>
+                <td class="td-data">ปรัชญา</td>
+                <td class="td-data">0811111114</td>
+                <td class="td-data">mail@gmail.com</td>
+            </tr>
+        </table>
+    </div>
+    </center>
+  </body>
+</html>

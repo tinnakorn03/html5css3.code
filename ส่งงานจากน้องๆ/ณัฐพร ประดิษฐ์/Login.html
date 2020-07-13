@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Login</title>
+    <style>
+      body {
+        background-color: rgb(235, 235, 235);
+        font-weight: 600;
+        font-family: sans-serif;
+      }
+      p,
+      label {
+        display: inline;
+      }
+      div {
+        margin: 20px;
+      }
+      input {
+        width: 300px;
+        height: 20px;
+      }
+      input:hover {
+        border: 3px solid rgb(84, 144, 192);
+        border-radius: 3px;
+      }
+      .btn {
+        background: rgba(35, 243, 35, 0.986);
+        width: 90px;
+        border-radius: 10px;
+        font-size: 18px;
+        border: 0px;
+        padding: 5px;
+        font-weight: 600;
+      }
+      .btn:hover {
+        background: rgba(58, 255, 58, 0.986);
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <div class="container">
+        <div
+          style="
+            border: 10px solid #ff7f7f;
+            border-radius: 30px;
+            padding: 10px;
+            margin: auto;
+            width: 600px;
+            background-color: #fff349;
+            margin-top: 50px;
+          "
+        >
+          <div style="margin-top: 100px;">
+            <label for="Username" style="margin-left: 0px;">User</label>
+            <input type="text" style="margin-left: 85px;" />
+          </div>
+          <div>
+            <label for="Password" style="margin-left: 0px;">Password</label>
+            <input type="text" style="margin-left: 45px;" />
+          </div>
+          <br />
+          <form>
+            <button
+              class="btn"
+              type="submit"
+              formaction="lab1.html"
+              value="Login"
+            >
+              Login
+            </button>
+          </form>
+
+          <br />
+          <br />
+          <br />
+        </div>
+      </div>
+    </center>
+  </body>
+</html>
